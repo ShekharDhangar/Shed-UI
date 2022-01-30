@@ -1,0 +1,146 @@
+@import url(/utils.css);
+
+.btn{
+    display:inline-flex;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    font-size: 1rem;
+    height: 2.25rem;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: none;
+    color: var(--clr-white);
+    padding-inline-start: 0.7rem;
+    padding-inline-end: 0.7rem;
+    width: max-content;
+    gap: 0.5rem;
+}
+
+.btn:hover{
+    background-color: var(--clr-blue);
+}
+
+.btn.error{
+    background-color: var(--clr-red);
+}
+
+.btn.cancel{
+    background-color: var(--clr-grey);
+}
+
+.btn.btn.outline:hover{
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--clr-white);
+}
+
+.btn.outline{
+    background-color: transparent;
+    border:1px solid var(--primary-color);
+    border-radius: 0.5rem;
+    color: var(--primary-color);
+}
+
+.btn.outline.ltgreen{
+    border:1px solid var(--clr-ltgreen);
+    color: var(--clr-ltgreen);
+}
+
+.btn.outline.ltgreen:hover{
+    background-color: var(--clr-ltgreen);
+}
+
+.btn.outline.green1{
+    border:1px solid var(--clr-green1);
+    color: var(--clr-green1);
+}
+
+.btn.outline.green1:hover{
+    background-color: var(--clr-green1);
+}
+
+
+.btn-xs{
+    font-size: 1.25rem;
+    height: 2.5rem;
+    min-width: 3.5rem;
+    max-width: max-content;
+    padding-inline-start: 0.75rem;
+    padding-inline-end: 0.75rem;
+}
+
+.btn-sm{
+    font-size: 1.5rem;
+    max-width: max-content;
+    height: 3rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+}
+
+.btn-md{
+    font-size: 1.75rem;
+    max-width: max-content;
+    height: 3.5rem;
+    padding-inline-start: 1.25rem;
+    padding-inline-end: 1.25rem;
+}
+
+.btn-lg{
+    max-width: max-content;
+    font-size: 2rem;
+    height: 4rem;
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem;
+}
+
+.btn-xl{
+    font-size: 2.25rem;
+    height: 4.5rem;
+    padding-inline-start: 1.75rem;
+    padding-inline-end: 1.75rem;
+}
+
+.link{
+    text-decoration: none;
+    background-color: var(--clr-ltgreen);
+    padding: 1rem;
+    color: white;
+    font-weight: 700;
+    border-radius: 0.5rem;
+}
+
+
+/* Floating BTN */
+.floating-btn,
+.floating-items{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.floating-btn .btn{
+    background-color: var(--clr-blue1);
+    border-radius: 50%;
+    padding: 0;
+}
+
+.float-btn .icon,
+.floating-item .icon{
+    padding: 1rem;
+}
+
+.floating-item {
+    border-radius: 50%;
+    background-color: var(--clr-blue1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
