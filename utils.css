@@ -1,24 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 :root{
     --primary-color:#3182ce;
-    --blue:#2b6cb0;
-    --red:rgb(255, 0, 0);
-    --grey:#646464cf;
-    --ltblue:#0084ff;
-    --green1:#12b2b3;
-    --ltgreen:#04bf5b;
-    --blue1:rgb(2, 177, 200);
-    --black:#000;
-    --white:#fff;
+    --clr-blue:#2b6cb0;
+    --clr-red:rgb(255, 0, 0);
+    --clr-grey:#646464cf;
+    --clr-ltblue:#0084ff;
+    --clr-green1:#12b2b3;
+    --clr-ltgreen:#04bf5b;
+    --clr-blue1:rgb(2, 177, 200);
+    --clr-black:#000;
+    --clr-white:#fff;
     font-size: 10px;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 .container{
     border: 2px solid black;
@@ -28,97 +30,126 @@
     max-width: 100rem;
 }
 
+
 .m-0{
     margin: 0;
 }
+
 .m-0-5{
     margin: 0.5rem;
 }
+
 .m-1{
     margin: 1rem;
 }
+
 .m-1-5{
     margin: 1.5rem;
 }
+
 .m-2{
     margin: 2rem;
 }
+
 /* ||Padding */
 .p-0{
     padding: 0;
 }
+
 .p-0-5{
     padding: 0.5rem;
 }
+
 .p-1{
     padding: 1rem;
 }
+
 .p-1-5{
     padding: 1.5rem;
 }
+
 .p-2{
     padding: 2rem;
 }
+
 /* colors */
 .flex{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .hidden{
     visibility: hidden;
 }
+
 .bg-black{
-    background-color: var(--black);
+    background-color: var(--clr-black);
 }
+
 .bg-grey{
-    background-color: var(--grey);
+    background-color: var(--clr-grey);
 }
+
 .bg-blue{
-    background-color: var(--blue);
+    background-color: var(--clr-blue);
 }
+
 .bg-red{
-    background-color: var(--red);
+    background-color: var(--clr-red);
 }
+
 .bg-green{
-    background-color: var(--ltgreen);
+    background-color: var(--clr-ltgreen);
 }
+
 .bg-ltblue{
-    background-color: var(--ltblue);
+    background-color: var(--clr-ltblue);
 }
+
 .avatar-circle{
     border-radius: 50%;
 }
+
 /* IMAGE-SIZE */
 .size-sm > img{
     width: 6rem;
   }
+  
   .size-md >  img{
     width: 8rem;
   }
+  
   .size-lg > img{
     width: 10rem;
   }
+  
   .size-xl > img{
     width: 12rem;
   }
+  
   .size-2xl > img{
     width: 14rem;
   }
+  
   .res{
     max-inline-size: 100%;
     block-size: auto;
     width: 100%;
 }
+
 .hidden{
     visibility: hidden;
 }
+
 .none{
     display: none;
 }
+
 .icon{
     cursor: pointer;
 }
+
 .avatar-sq{
     border-radius: 1rem;
 }
