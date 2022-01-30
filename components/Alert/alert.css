@@ -1,0 +1,87 @@
+.alert{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: max-content;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border:none;
+    border-width: 0px;
+}
+
+.alert-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    padding: 0.75rem;
+}
+
+.alert-icon > .icon {
+    width: 2.5rem;
+    flex-shrink: 1;
+}
+
+.variant .alert-content{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-black);
+    padding-inline-start: 1rem;
+    max-width: 100%;
+}
+
+.variant{
+    max-width: 25rem;
+    width: 100%;   
+}
+
+.alert-content{
+    color: var(--clr-white);
+    flex-basis: 20rem;
+    padding: 0.75rem 0;
+    padding-inline-end: 1rem;
+    flex-grow: 1;
+    align-self: center;
+    font-weight: 700;
+}
+
+.alert-message{
+    font-size: 1.65rem;
+}
+
+.alert-details{
+    font-size: 1.35rem;
+}
+
+.variant.al-success .alert-icon{
+    background-color: var(--clr-ltgreen);
+}
+
+.variant.al-success .alert-content .alert-message{
+    color: var(--clr-ltgreen);
+}
+
+.variant.al-error .alert-icon{
+    background-color: var(--clr-red);
+}
+
+.variant.al-error .alert-content .alert-message{
+    color: var(--clr-red);
+}
+
+.variant.al-info .alert-icon {
+    background-color: var(--clr-ltblue);
+}
+
+.variant.al-info .alert-content .alert-message{
+    color: var(--clr-ltblue);
+}
+
+.variant.al-info{
+    background-color: var(--clr-ltblue);
+}
+
+.al-warning {
+    background-color: var(--clr-grey);
+}
+
