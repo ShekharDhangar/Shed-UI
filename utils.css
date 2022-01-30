@@ -86,7 +86,7 @@
 .bg-ltblue{
     background-color: var(--ltblue);
 }
-.circle{
+.avatar-circle{
     border-radius: 50%;
 }
 /* IMAGE-SIZE */
@@ -119,6 +119,6 @@
 .icon{
     cursor: pointer;
 }
-.sq{
+.avatar-sq{
     border-radius: 1rem;
 }

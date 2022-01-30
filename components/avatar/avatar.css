@@ -1,3 +1,4 @@
+
 .txt-avatar{
     display: flex;
     justify-content: center;
@@ -11,8 +12,7 @@
     position: relative;
     border-radius: 50%;
 }
-
-.sq{
+.avatar-sq{
     border-radius: 1rem;
 }
 .size-xs{
