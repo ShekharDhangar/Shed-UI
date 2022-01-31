@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <link rel="stylesheet" href="/components/Input/input.css">
+</head>
+<body>
+    <section class="container">
+        <form action="">
+            <div class="input-container validate ">
+                <input type="text" class="input success" placeholder="Username" required >
+                <div class="validation-style">
+                    <img class="icon" src="/Assets/success.png" alt="">
+                    <span class="success-txt" >Username is available</span>
+                </div>
+            </div>
+            <div class="input-container validate">
+                <input type="password" class="input error" placeholder="Password" required >
+                <div class="validation-style">
+                    <img class="icon" src="/Assets/error.png" alt="">
+                    <span class="error-txt" >Password is incorrect</span>
+                </div>
+                </div>
+            <textarea class="txt-area" name="" id="" cols="30" rows="10" placeholder="Write a Message" required ></textarea>
+        </form>
+    </section>
+</body>
+</html>

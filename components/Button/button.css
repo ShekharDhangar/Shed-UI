@@ -18,7 +18,7 @@
     padding-inline-start: 0.7rem;
     padding-inline-end: 0.7rem;
     width: max-content;
-    gap: 0.5rem;
+    gap: 0.75rem;
 }
 
 .btn:hover{
@@ -66,53 +66,65 @@
 
 
 .btn-xs{
-    font-size: 1.25rem;
-    height: 2.5rem;
+    font-size: 1.7rem;
+    height: 3.5rem;
     min-width: 3.5rem;
     max-width: max-content;
-    padding-inline-start: 0.75rem;
-    padding-inline-end: 0.75rem;
-}
-
-.btn-sm{
-    font-size: 1.5rem;
-    max-width: max-content;
-    height: 3rem;
-    padding-inline-start: 1rem;
-    padding-inline-end: 1rem;
-}
-
-.btn-md{
-    font-size: 1.75rem;
-    max-width: max-content;
-    height: 3.5rem;
     padding-inline-start: 1.25rem;
     padding-inline-end: 1.25rem;
 }
 
-.btn-lg{
-    max-width: max-content;
+.btn-sm{
     font-size: 2rem;
+    max-width: max-content;
     height: 4rem;
-    padding-inline-start: 1.5rem;
-    padding-inline-end: 1.5rem;
+    padding-inline-start: 1.25rem;
+    padding-inline-end: 1.25rem;
 }
 
-.btn-xl{
-    font-size: 2.25rem;
+.btn-md{
+    font-size: 2.5rem;
+    max-width: max-content;
     height: 4.5rem;
     padding-inline-start: 1.75rem;
     padding-inline-end: 1.75rem;
 }
 
+.btn-lg{
+    font-size: 3rem;
+    max-width: max-content;
+    height: 5rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+}
+
+.btn-xl{
+    font-size: 4rem;
+    height: 6rem;
+    padding-inline-start: 2.25rem;
+    padding-inline-end: 2.25rem;
+    max-width: max-content;
+}
+
 .link{
     text-decoration: none;
     background-color: var(--primary-color);
-    padding: 1rem;
+    min-height: max-content;
     color: white;
     font-weight: 700;
-    height: auto;
     border-radius: 0.5rem;
+}
+
+.link-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border: none;
+    width: 100%;
+    margin-top: 3rem;
+    background: none;
 }
 
 
@@ -142,6 +154,4 @@
     justify-content: center;
     align-items: center;
 }
-
-
 

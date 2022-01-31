@@ -23,7 +23,7 @@ span{
     margin-top: 0.5rem;
 }
 .title{
-    font-weight: 600;
+    font-weight: bolder;
     font-size: 2rem;
 }
 .card-content > .card-description{
@@ -63,7 +63,7 @@ span{
 }
 .vertical-card .card-content{
     background-color: white;
-    font-weight: 600;
+    font-weight: bolder;
     padding: 1rem;
     margin: 0;
 }
@@ -74,7 +74,7 @@ span{
 .vertical-card .card-content 
 .card-description .title{
     font-size: 1.75rem;
-    font-weight: 600;
+    font-weight: bold;
 }
 .card-content .rating{
     font-size: 1.3rem;
@@ -108,9 +108,9 @@ span{
     top: 1rem;
     left: 0rem;
     padding: 0.5rem;
-    width: 10rem;
-    font-size: 1.1rem;
-    font-weight: 600;
+    width: 12rem;
+    font-size: 1.125rem;
+    font-weight: bolder;
     color: var(--clr-red);
     text-transform: uppercase;
 }
@@ -130,7 +130,7 @@ span{
 .dismiss-card{
     align-items: flex-start;
     border-radius: 0.5rem;
-    max-width: 25rem;
+    max-width: 30rem;
     color: var(--clr-white);
 }
 .card-footer a{
@@ -244,7 +244,7 @@ span{
     font-size: 1.5rem;
 }
 .horizontal-card .card-footer .footer-1{
-    margin-top: 1rem;
+    margin-top: 0.25rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -252,9 +252,6 @@ span{
 .horizontal-card .card-footer .footer-1 > p,
 .horizontal-card .card-footer > p{
     font-size: 1.5rem;
-}
-.horizontal-card .card-footer > p{
-    margin-top: 0.75rem;
 }
 .horizontal-card .card-footer .footer-1 p span{
     font-size: 1.5rem;
