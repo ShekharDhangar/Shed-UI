@@ -107,10 +107,11 @@
 
 .link{
     text-decoration: none;
-    background-color: var(--clr-ltgreen);
+    background-color: var(--primary-color);
     padding: 1rem;
     color: white;
     font-weight: 700;
+    height: auto;
     border-radius: 0.5rem;
 }
 
