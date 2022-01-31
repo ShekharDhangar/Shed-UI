@@ -23,7 +23,7 @@ span{
     margin-top: 0.5rem;
 }
 .title{
-    font-weight: bolder;
+    font-weight: 600;
     font-size: 2rem;
 }
 .card-content > .card-description{
@@ -63,7 +63,7 @@ span{
 }
 .vertical-card .card-content{
     background-color: white;
-    font-weight: bolder;
+    font-weight: 600;
     padding: 1rem;
     margin: 0;
 }
@@ -74,7 +74,7 @@ span{
 .vertical-card .card-content 
 .card-description .title{
     font-size: 1.75rem;
-    font-weight: bold;
+    font-weight: 600;
 }
 .card-content .rating{
     font-size: 1.3rem;
@@ -110,7 +110,7 @@ span{
     padding: 0.5rem;
     width: 10rem;
     font-size: 1.1rem;
-    font-weight: bolder;
+    font-weight: 600;
     color: var(--clr-red);
     text-transform: uppercase;
 }
