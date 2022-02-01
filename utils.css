@@ -15,7 +15,7 @@
     font-size: 10px;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.11rem;
 }
 
 *{
@@ -115,25 +115,38 @@
 }
 
 /* IMAGE-SIZE */
-.size-sm > img{
-    width: 6rem;
-  }
-  
-  .size-md >  img{
-    width: 8rem;
-  }
-  
-  .size-lg > img{
-    width: 10rem;
-  }
-  
-  .size-xl > img{
-    width: 12rem;
-  }
-  
-  .size-2xl > img{
-    width: 14rem;
-  }
+img.size-xs{
+    width: 4rem;
+    height: 4rem;
+}
+img.size-sm{
+width: 6rem;
+height: 6rem;
+}
+
+img.size-md {
+width:8rem;
+height: 8rem;
+}
+
+img.size-lg{
+width: 10rem;
+height: 10rem;
+}
+
+img.size-xl{
+width: 12rem;
+height: 12rem;
+}
+
+img.size-2xl{
+width: 14rem;
+height: 14rem;
+}
+img.size-3xl{
+    width: 20rem;
+    height: 20rem;
+}
   
   .res{
     max-inline-size: 100%;

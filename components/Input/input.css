@@ -9,7 +9,7 @@
     margin-bottom: 0.25rem;
 }
 .input-container > input{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     outline: none;
     width: 100%;
     resize: none;
@@ -42,7 +42,7 @@
     color: var(--clr-red);
 }
 .txt-area{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     outline: none;
     max-width: 25rem;
     width: 100%;

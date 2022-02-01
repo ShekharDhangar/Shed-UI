@@ -1,8 +1,6 @@
 @import url(/components/Avatar/avatar.css);
 @import url(/utils.css);
-.avatar-container{
-    overflow: initial;
-}
+
 .avatar-badge{
     position: absolute;
     border-radius: 50%;
