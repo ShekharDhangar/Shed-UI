@@ -1,3 +1,4 @@
+@import url(/utils.css);
 .txt-avatar{
     display: flex;
     justify-content: center;
@@ -5,53 +6,69 @@
     border-radius: 50%;
     background-color: var(--primary-color);
 }
+
 .avatar-container{
     display: inline-flex;
-    overflow: hidden;
     position: relative;
+}
+
+.avatar-container img{
     border-radius: 50%;
 }
-.avatar-sq{
+
+.avatar-sq img{
     border-radius: 1rem;
 }
+
 .size-xs{
     width: 2rem;
     height: 2rem;
 }
+
 .size-sm{
     width: 4rem;
     height: 4rem;
 }
+
 .size-md {
     width: 6rem;
     height: 6rem;
 }
+
 .size-lg{
     width: 8rem;
     height: 8rem;
 }
+
 .size-xl{
     width: 10rem;
     height: 10rem;
 }
+
 .size-2xl{
     width: 12rem;
     height: 12rem;
 }
 
+
 /* TXT-AVATAR */
 .size-xs h2{
     font-size: 1rem;
 }
+
 .size-sm h2{
     font-size: 2rem;
 }
+
 .size-md h2{
     font-size: 3rem;
 }
+
 .size-lg h2{
     font-size: 4.5rem;
 }
+
 .size-xl h2{
     font-size: 5.5rem;
 }
+
