@@ -1,0 +1,54 @@
+@import url(/utils.css);
+
+.input-container{
+    max-width: 25rem;
+    position: relative;
+    width: 100%;
+}
+.validate .input{
+    margin-bottom: 0.25rem;
+}
+.input-container > input{
+    font-size: 1.75rem;
+    outline: none;
+    width: 100%;
+    resize: none;
+    padding: 1rem 0;
+    padding-inline-start: 1rem;
+    border-radius: 0.75rem;
+}
+.input-container.validate .input.success{
+    border: 2px solid var(--clr-blue);
+}
+.input-container.validate .input.error{
+    border: 2px solid var(--clr-red);
+}
+.input-container.validate  .icon{
+    position: absolute;
+    width: 2rem;
+    top: 1.25rem;
+    right: 1.25rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.input-container .validation-style span{
+    font-size: 1.5rem;
+    margin: 0;
+}
+.success-txt{
+    color: var(--clr-blue);
+}
+.error-txt{
+    color: var(--clr-red);
+}
+.txt-area{
+    font-size: 1.75rem;
+    outline: none;
+    max-width: 25rem;
+    width: 100%;
+    resize: none;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 2px solid var(--clr-ltgreen);
+}
