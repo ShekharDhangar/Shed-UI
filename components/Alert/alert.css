@@ -14,12 +14,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 4rem;
-    padding: 0.75rem;
+    width: max-content;
+    padding: 1rem;
 }
 
 .alert-icon > .icon {
-    width: 2.5rem;
+    width: 3rem;
     flex-shrink: 1;
 }
 
@@ -40,7 +40,7 @@
     color: var(--clr-white);
     flex-basis: 25rem;
     padding: 0.75rem 0;
-    padding-inline-end: 1rem;
+    padding-inline-end: 2rem;
     flex-grow: 1;
     align-self: center;
     font-weight: 700;
@@ -55,34 +55,37 @@
 }
 
 .variant.al-success .alert-icon{
-    background-color: var(--clr-ltgreen);
+    background-color: var(--success-clr);
 }
 
 .variant.al-success .alert-content .alert-message{
-    color: var(--clr-ltgreen);
+    color: var(--success-clr);
 }
 
-.variant.al-error .alert-icon{
-    background-color: var(--clr-red);
+.variant.al-danger .alert-icon{
+    background-color: var(--danger-clr);
 }
 
-.variant.al-error .alert-content .alert-message{
-    color: var(--clr-red);
+.variant.al-danger .alert-content .alert-message{
+    color: var(--danger-clr);
 }
 
 .variant.al-info .alert-icon {
-    background-color: var(--clr-ltblue);
+    background-color: var(--info-clr);
 }
 
 .variant.al-info .alert-content .alert-message{
-    color: var(--clr-ltblue);
+    color: var(--info-clr);
 }
 
 .variant.al-info{
-    background-color: var(--clr-ltblue);
+    background-color: var(--info-clr);
 }
 
 .al-warning {
-    background-color: var(--clr-grey);
+    background-color: var(--warning-clr);
+}
+.al-warning .alert-content{
+    color: black;
 }
 

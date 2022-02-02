@@ -1,10 +1,8 @@
 @import url(/utils.css);
 .txt-avatar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 50%;
-    background-color: var(--primary-color);
+    background-color: var(--primary-clr);
+    color: var(--clr-white);
 }
 .avatar-container{
     display: inline-flex;
@@ -42,18 +40,18 @@
 }
 
 /* TXT-AVATAR */
-.size-xs h2{
+.size-xs span{
     font-size: 1rem;
 }
-.size-sm h2{
+.size-sm span{
     font-size: 2rem;
 }
-.size-md h2{
+.size-md span{
     font-size: 3rem;
 }
-.size-lg h2{
+.size-lg span{
     font-size: 4.5rem;
 }
-.size-xl h2{
+.size-xl span{
     font-size: 5.5rem;
 }

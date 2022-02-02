@@ -2,21 +2,21 @@
 @import url(/components/Avatar/avatar.css);
 @import url(/components/Button/button.css);
 .card-container{
-    background-color: #1a202c;
+    background-color: var(--clr-darkblue);
     padding: 1.5rem 2rem;
-    color: white;
+    color: var(--clr-white);
     display: flex;
     position: relative;
     flex-direction: column;
-    max-width: 40rem;
+    max-width: 50rem;
     border-radius: 0.5rem;
 }
 .card-header{
-    display: flex;
-    align-items: center;
     justify-content: space-between;
 }
-.card-header span{
+span,
+.card-content > .card-description{
+    margin-top: 0.5rem;
     font-size: 1.25rem;
 }
 .card-content{
@@ -26,13 +26,9 @@
     font-weight: bolder;
     font-size: 2rem;
 }
-.card-content > .card-description{
-    font-size: 1.25rem;
-}
 .card-container .card-footer{
     margin-top: 1rem;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     width: 100%;
 }
@@ -43,7 +39,6 @@
 }
 .card-author-box span{
     margin: 0 0.75rem;
-    font-size: 1.25rem;
 }
 /* Vertical Card with Badge */
 .vertical-card{
@@ -51,9 +46,9 @@
     flex-direction: column;
     position: relative;    
     border-radius: 0.75rem;
-    max-width: 27rem;
+    max-width: 30rem;
     overflow: hidden;
-    box-shadow: rgba(0,0,0,0.25) 0rem 2rem 3rem;
+    box-shadow: var(--box-shadow-clr)
 }
 .vertical-card .card-header{
     display: flex;
@@ -63,30 +58,22 @@
     background-color: var(--clr-grey);
 }
 .vertical-card .card-content{
-    background-color: white;
-    font-weight: bolder;
-    padding: 1rem;
+    font-weight: 700;
+    padding: 1rem 1.5rem;
     margin: 0;
-}
-.vertical-card .card-content 
-.card-description{
-    margin: 0;
-}
-.vertical-card .card-content 
-.card-description .title{
-    font-size: 1.75rem;
-    font-weight: bold;
 }
 .card-content .rating{
     font-size: 1.3rem;
     font-weight: 400;
     color: var(--clr-red);
 }
+.vertical-card .title{
+    font-size: 2rem;
+    font-weight: 800;
+}
 .price{
-    font-size: 1.5rem;
-    line-height: 1.5;
+    font-size: 1.75rem;
     color: var(--clr-red);
-    font-weight: 600;
 }
 .card-clr-variant {
     margin: 1.5rem 0;
@@ -111,7 +98,7 @@
     padding: 0.5rem;
     width: 12rem;
     font-size: 1.125rem;
-    font-weight: bolder;
+    font-weight: 800;
     color: var(--clr-red);
     text-transform: uppercase;
 }
@@ -122,7 +109,7 @@
     left: -0.5rem;
     width: 100%;
     height: 100%;
-    background: #fff;
+    background: var(--clr-white);
     z-index: -1;
     transform-origin: 100% 0;
     transform: skew(-27deg);
@@ -131,16 +118,16 @@
 .dismiss-card{
     align-items: flex-start;
     border-radius: 0.5rem;
-    max-width: 30rem;
+    width: 60ch;
+    max-width: max-content;
     color: var(--clr-white);
 }
-.card-footer a{
-    display: flex;
+.dismiss-card .card-footer {
     align-items: center;
 }
 .card-footer .icon{
-    background-color: var(--primary-color);
-    padding: 0.5rem;
+    background-color: var(--primary-clr);
+    padding: 0.75rem;
     color: var(--clr-white);
     width: 2rem;
     height: 2rem;
@@ -151,9 +138,18 @@
     top: 0.75rem;
     right: 1rem;
     border: none;
+    padding: 1.25rem;
+    height: 2.5rem;
+    width: 2.5rem;
     background-color: transparent;
     color: var(--clr-white);
     border-radius: 50%;
+    cursor: pointer;
+}
+.close-icon:hover{
+    background-color: var(--clr-red);
+    transform: scale(1.1);
+    transition: 0.1s all linear;
 }
 .close-icon > .icon{
     height: 1.75rem;
@@ -164,25 +160,23 @@
     position: relative;
     display: grid;
     padding: 0;
-    max-width: 30rem;
+    max-width: 35rem;
     overflow: hidden;
     border: none;
-    border-radius: .5rem;
+    border-radius: 0.75rem;
 }
 .card-overlay .img-overlay > img{
     width: 100%;
     height: 100%;
     max-inline-size: 100%;
-    block-size: auto;
 }
 .card-overlay-content{
     display: inline-flex;
     max-width: 100%;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-direction: column;
     padding: 1rem;
     color: var(--clr-white);
-    box-sizing: border-box;
     font-size: 1.25rem;
 }
 .card-overlay-content,
@@ -193,25 +187,24 @@
 
 /* ||text only card  */
 .text-card{
-    max-width: 30rem;
+    width: 60ch;
+    max-width: max-content;
 }
 .text-card .card-footer{
     justify-content: center;
 }
-.text-card .card-footer span{
-    font-size: 1.25rem;
-}
+
 
 /*|| Horizontal-Card */
 .horizontal-card{
     display: grid;
     grid-template-columns: 40fr 60fr;
     max-width: 60rem;
+    padding: 1rem;
     background-color: var(--clr-white);
-    box-shadow: rgba(0,0,0,0.25) 0rem 2rem 3rem;
+    box-shadow: var(--box-shadow-clr)
 }
 .horizontal-card .card-header{
-    padding: 0rem 1rem;
     max-width: 25rem;
     height: 100%;
     display: flex;
@@ -224,7 +217,9 @@
     block-size: auto;
 }
 .horizontal-card .card-content{
+    margin: 0;
     height: max-content;
+    align-self: center;
 }
 .horizontal-card .card-content .title{
     margin-top: 0.25rem;
@@ -232,27 +227,26 @@
 }
 .horizontal-card .card-content .rating{
     margin: 0.5rem 0;
-    color: orange;
+    color: var(--clr-yellow);
     font-size: 1.5rem;
 }
-.horizontal-card .card-content .card-description .price{
+.horizontal-card .card-description .price{
     font-size: 2.25rem;
-    color: #B12704;
+    color: var(--clr-maroon);
 }
-.horizontal-card .card-content .card-description .side-txt{
-    font-size: 1.5rem;
+.horizontal-card .card-content .card-description .discount-txt{
     color: black;
-    font-weight: normal;
+    font-size: 1.5rem;
 }
 .horizontal-card .card-description p{
     font-size: 1.5rem;
 }
 .horizontal-card .card-footer .footer-1{
-    margin-top: 0.25rem;
+    margin: 0.25rem 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-} 
+    gap: 1rem;
+}
 .horizontal-card .card-footer .footer-1 > p,
 .horizontal-card .card-footer > p{
     font-size: 1.5rem;
