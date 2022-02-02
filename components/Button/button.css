@@ -22,8 +22,8 @@
 }
 
 .btn:hover{
-    transform: scale(1.1);
-    transition: 0.1s all linear;
+    transform: scale(1.04);
+    transition: 0.2s all linear;
     background-color: var(--secondary-clr);
 }
 

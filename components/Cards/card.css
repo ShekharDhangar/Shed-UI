@@ -14,16 +14,18 @@
 .card-header{
     justify-content: space-between;
 }
-span,
-.card-content > .card-description{
+span{
+    font-size: 1.25rem;
+}
+.card-container .card-content > .card-description{
     margin-top: 0.5rem;
     font-size: 1.25rem;
 }
-.card-content{
+.card-container .card-content{
     margin-top: 0.5rem;
 }
 .title{
-    font-weight: bolder;
+    font-weight: 800;
     font-size: 2rem;
 }
 .card-container .card-footer{
@@ -46,7 +48,7 @@ span,
     flex-direction: column;
     position: relative;    
     border-radius: 0.75rem;
-    max-width: 30rem;
+    max-width: 27.5rem;
     overflow: hidden;
     box-shadow: var(--box-shadow-clr)
 }
@@ -59,8 +61,8 @@ span,
 }
 .vertical-card .card-content{
     font-weight: 700;
-    padding: 1rem 1.5rem;
-    margin: 0;
+    padding: 1rem;
+    margin: 0 0.75rem;
 }
 .card-content .rating{
     font-size: 1.3rem;
@@ -87,9 +89,12 @@ span,
     list-style: none;
     cursor: pointer;
 }
-.card-content .btn{
+.vertical-card .card-content .btn{
     margin-bottom: 0.5rem;
+    width: 100%;
+    max-width: 100%;
 }
+
 .my-badge{
     position: absolute;
     z-index: 1;
@@ -118,8 +123,8 @@ span,
 .dismiss-card{
     align-items: flex-start;
     border-radius: 0.5rem;
-    width: 60ch;
-    max-width: max-content;
+    width: 100%;
+    max-width: 30rem;
     color: var(--clr-white);
 }
 .dismiss-card .card-footer {
@@ -194,13 +199,13 @@ span,
     justify-content: center;
 }
 
-
 /*|| Horizontal-Card */
 .horizontal-card{
-    display: grid;
-    grid-template-columns: 40fr 60fr;
     max-width: 60rem;
-    padding: 1rem;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    padding: 1rem 0rem;
+    gap: 1rem;
     background-color: var(--clr-white);
     box-shadow: var(--box-shadow-clr)
 }
@@ -217,16 +222,18 @@ span,
     block-size: auto;
 }
 .horizontal-card .card-content{
+    display: flex;
+    flex-direction: column;
     margin: 0;
     height: max-content;
-    align-self: center;
+    padding-inline-end: 1rem;
 }
 .horizontal-card .card-content .title{
     margin-top: 0.25rem;
     font-size: 2rem;
 }
 .horizontal-card .card-content .rating{
-    margin: 0.5rem 0;
+    margin-top: 0.5rem;
     color: var(--clr-yellow);
     font-size: 1.5rem;
 }
@@ -235,11 +242,15 @@ span,
     color: var(--clr-maroon);
 }
 .horizontal-card .card-content .card-description .discount-txt{
-    color: black;
+    color: var(--clr-black);
     font-size: 1.5rem;
 }
 .horizontal-card .card-description p{
     font-size: 1.5rem;
+}
+.horizontal-card .card-footer .btn{
+    margin: 0.5rem 0;
+    width: 100%;
 }
 .horizontal-card .card-footer .footer-1{
     margin: 0.25rem 0;
