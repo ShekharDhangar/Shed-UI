@@ -11,7 +11,7 @@
     max-width: 50rem;
     border-radius: 0.5rem;
 }
-.card-header{
+.card-container .card-header{
     justify-content: space-between;
 }
 span{
@@ -24,7 +24,7 @@ span{
 .card-container .card-content{
     margin-top: 0.5rem;
 }
-.title{
+.card-container .title{
     font-weight: 800;
     font-size: 2rem;
 }
@@ -48,9 +48,11 @@ span{
     flex-direction: column;
     position: relative;    
     border-radius: 0.75rem;
-    max-width: 27.5rem;
+    width: 100%;
+    max-width: 29rem;
     overflow: hidden;
-    box-shadow: var(--box-shadow-clr)
+    box-shadow: var(--box-shadow-clr);
+    background-color: var(--clr-white);
 }
 .vertical-card .card-header{
     display: flex;
@@ -124,7 +126,7 @@ span{
     align-items: flex-start;
     border-radius: 0.5rem;
     width: 100%;
-    max-width: 30rem;
+    max-width: 35rem;
     color: var(--clr-white);
 }
 .dismiss-card .card-footer {
@@ -201,6 +203,7 @@ span{
 
 /*|| Horizontal-Card */
 .horizontal-card{
+    width: 100%;
     max-width: 60rem;
     display: grid;
     grid-template-columns: 35% 65%;
