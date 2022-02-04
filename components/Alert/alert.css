@@ -86,6 +86,6 @@
     background-color: var(--warning-clr);
 }
 .al-warning .alert-content{
-    color: black;
+    color: var(--clr-black);
 }
 

@@ -276,3 +276,130 @@ span{
     color: var(--clr-grey);
     text-decoration: line-through;
 }
+
+/* Media   Queries */
+@media only screen and (max-width: 710px) {
+    .horizontal-card{
+        gap: 1em;
+    }
+    .horizontal-card .card-header img{
+        max-height: 25em;
+        height: 100%;
+    }
+    .horizontal-card .card-header{
+        max-height: 20em;
+        max-width: 20em;
+    }
+    .horizontal-card .card-content .title{
+        font-size: 1.35em;
+    }
+
+    .horizontal-card .card-content .rating{
+        font-size: 1.25em;
+    }
+    .horizontal-card .card-description .price{
+        font-size: 1.75em;
+    }
+    .horizontal-card .card-content .card-description .discount-txt{
+        font-size: 0.65em;
+    }
+    .horizontal-card .card-description p{
+        font-size: 1.25em;
+    }
+
+    .horizontal-card .card-footer .btn{
+        font-size: 1.25em;
+        height: 2.5em;
+        max-width: 8em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .horizontal-card .card-footer .footer-1 > p,
+    .horizontal-card .card-footer > p{
+        font-size: 1.25em;
+    }
+    .horizontal-card .card-footer .footer-1 p span{
+        font-size: 1em;
+    }
+    .horizontal-card .card-footer .footer-1 > img{
+        max-width:5em;
+    }
+}
+
+@media only screen and (max-width:560px){
+    .horizontal-card{
+        gap: 0;
+    }
+    .horizontal-card .card-header img{
+        max-height: 20em;
+        height: 100%;
+    }
+    .horizontal-card .card-header{
+        max-height: 15em;
+        max-width: 15em;
+    }
+
+    .horizontal-card .card-content .title{
+        font-size: 1.25em;
+    }
+
+    .horizontal-card .card-content .rating{
+        font-size: 1em;
+    }
+    .horizontal-card .card-description .price{
+        font-size: 1.5em;
+    }
+    .horizontal-card .card-content .card-description .discount-txt{
+        font-size: 0.75em;
+    }
+    .horizontal-card .card-description p{
+        font-size: 1em;
+    }
+
+    .horizontal-card .card-footer .btn{
+        font-size: 1em;
+        height: 2.5em;
+        max-width: 8em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .horizontal-card .card-footer > p{
+        font-size: 1em;
+    }
+    .horizontal-card .card-footer .footer-1 p span{
+        font-size: 1em;
+    }
+    .horizontal-card .card-footer .footer-1 > img{
+        max-width:3em;
+    }
+
+    /* Card Container */
+    .card-container{
+        max-width: 35em;
+    }
+    .card-container .card-content .title{
+        font-size: 1.5em;
+    }
+    .card-container .card-content .card-description{
+        font-size: 1.25em;
+    }
+
+    /* vertical */
+    .vertical-card{
+        max-width: 25em;
+    }
+    .vertical-card .card-content .rating{
+        font-size: 1.15em;
+    }
+    .vertical-card .card-content .card-description .title{
+        font-size: 1.5em;
+    }
+    .vertical-card .card-content .card-description .price{
+        font-size: 1.35em;
+    }
+    .vertical-card .card-content .card-clr-variant > li{
+        width: 1em;
+        height: 1em;
+    }
+}
+
