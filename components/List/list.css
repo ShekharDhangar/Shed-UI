@@ -1,0 +1,38 @@
+@import url(/utils.css);
+@import url(/components/Text/text.css);
+.box ul, .box ol{
+    display:inline-block;
+    width: max-content;
+    margin: 0 2rem;
+    padding: 2rem 4rem;
+}
+.style-sq > li{
+    list-style:square;
+}
+.style-circle > li{
+    list-style: circle;
+}
+
+.style-alpha-lower{
+    list-style-type: lower-alpha;
+}
+.style-alpha-upper{
+    list-style-type: upper-alpha;
+}
+.style-lower-roman{
+    list-style-type: lower-roman;
+}
+.style-upper-roman{
+    list-style-type: upper-roman;
+}
+ul.stacked-list{
+    background-color: var(--clr-white);
+}
+.stacked-list > li{
+    border: 2px solid var(--clr-black);
+    margin: 1rem 0;
+    padding: 0.5rem;
+}
+.list-none{
+    list-style-type: none;
+}

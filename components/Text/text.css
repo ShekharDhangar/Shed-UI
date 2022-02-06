@@ -1,0 +1,60 @@
+@import url('/utils.css');
+
+.h1{
+    font-size: 3.5rem;
+}
+.h2{
+    font-size: 3rem;
+}
+.h3{
+    font-size: 2.5rem;
+}
+.h4{
+    font-size: 2rem;    
+}
+.h5{
+    font-size: 1.75rem;
+}
+.h6{
+    font-size: 1.25rem;
+}
+
+.txt-xs{
+    font-size: 1rem;
+}
+.txt-sm{
+    font-size: 1.5rem;
+}
+.txt-md{
+    font-size: 2rem;
+}
+.txt-lg{
+    font-size: 3rem;
+}
+.txt-xl{
+    font-size: 4rem;
+}
+.txt-grey{
+    color: var(--clr-grey);
+}
+.txt-center{
+    text-align: center;
+}
+.txt-italic{
+    font-style: italic;
+}
+.strike-txt{
+    text-decoration: line-through;
+}
+.txt-underline{
+    text-decoration: underline;
+}
+.bold{
+    font-weight: 800;
+}
+.light-font{
+    font-weight: 200;
+}
+.title{
+    font-size: 3rem;
+}
