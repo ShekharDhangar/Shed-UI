@@ -182,4 +182,10 @@ img.size-3xl{
 li{
     list-style: none;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    font-size: 4rem;
+}

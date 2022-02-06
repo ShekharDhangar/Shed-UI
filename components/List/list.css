@@ -1,0 +1,44 @@
+@import url(/utils.css);
+@import url(/components/Text/text.css);
+.container ul, .container ol{
+    display:inline-block;
+    background-color:var(--clr-grey);
+    width: max-content;
+    margin: 0 2rem;
+    padding: 2rem 4rem;
+}
+.style-sq > li{
+    list-style:square;
+}
+.style-circle > li{
+    list-style: circle;
+}
+li{
+    list-style: inherit;
+}
+.style-numbering{
+    list-style-type: style;
+}
+.style-alpha-lower{
+    list-style-type: lower-alpha;
+}
+.style-alpha-upper{
+    list-style-type: upper-alpha;
+}
+.style-lower-roman{
+    list-style-type: lower-roman;
+}
+.style-upper-roman{
+    list-style-type: lower-roman;
+}
+ul.stacked-list{
+    background-color: var(--clr-white);
+}
+.stacked-list > li{
+    border: 2px solid var(--clr-black);
+    margin: 1rem 0;
+    padding: 0.5rem;
+}
+.list-none{
+    list-style-type: none;
+}
