@@ -1,9 +1,6 @@
 @import url(/utils.css);
 @import url(/components/Button/button.css);
 ;
-*{
-    font-family: 'Poppins', sans-serif;
-}
 
 .nav-container{
     display: flex;
