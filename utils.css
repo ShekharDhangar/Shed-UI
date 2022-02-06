@@ -179,7 +179,7 @@ img.size-3xl{
     border-radius: 1rem;
 }
 
-li{
+.list-none{
     list-style: none;
 }
 a{

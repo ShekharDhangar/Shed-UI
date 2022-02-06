@@ -1,8 +1,7 @@
 @import url(/utils.css);
 @import url(/components/Text/text.css);
-.container ul, .container ol{
+.box ul, .box ol{
     display:inline-block;
-    background-color:var(--clr-grey);
     width: max-content;
     margin: 0 2rem;
     padding: 2rem 4rem;
@@ -13,12 +12,7 @@
 .style-circle > li{
     list-style: circle;
 }
-li{
-    list-style: inherit;
-}
-.style-numbering{
-    list-style-type: style;
-}
+
 .style-alpha-lower{
     list-style-type: lower-alpha;
 }
@@ -29,7 +23,7 @@ li{
     list-style-type: lower-roman;
 }
 .style-upper-roman{
-    list-style-type: lower-roman;
+    list-style-type: upper-roman;
 }
 ul.stacked-list{
     background-color: var(--clr-white);

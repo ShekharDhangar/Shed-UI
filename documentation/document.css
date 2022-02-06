@@ -186,6 +186,7 @@ code > span{
       max-height: 100vh;
       background: var(--clr-white);
       margin-left: 0;
+      padding-top: 2.5rem;
     }
     .component-item{
         width: 15rem;
