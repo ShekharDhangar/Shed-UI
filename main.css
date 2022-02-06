@@ -1,0 +1,104 @@
+@import url(/utils.css);
+@import url(/components/Button/button.css);
+;
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.nav-container{
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    /* justify-content:start; */
+}
+.nav-bar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+    justify-content: space-between;
+    padding: 0.5rem 5rem;
+}
+.nav-bar .logo{
+    justify-self: flex-start;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 5rem;
+    color: var(--primary-clr);
+    text-decoration: none;
+}
+/* || HERO */
+.hero-container{
+    margin-top: 3rem;
+    width: 100%;
+    height: 100vh;
+}
+.hero-txt{
+    padding: 1rem 0;
+    max-width: 60rem;
+    text-align: center;
+}
+.hero-txt .title{
+    font-size: 4.8rem;
+    font-weight: 900;
+    margin-inline: auto;
+}
+.hero-txt .description{
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.link-container .link{
+    font-size: 2rem;
+    height: 6rem;
+    padding-inline: 4rem;
+    gap: 1rem;
+}
+.link.github{
+    color: var(--clr-black);
+    background-color: var(--clr-lightgrey);
+}
+
+.link.github:hover{
+    background-color: #E3E9F0;
+}
+
+
+
+@media only screen and (max-width:780px){
+    .hero-txt{
+        max-width: 80vw;
+    }
+    .hero-txt .title{
+        font-size: 2.5em;
+    }
+    .hero-txt .description{
+        font-size: 1.5em;
+    }
+    .hero-txt .link-container a{
+        font-size: 1.15em;
+        height: 3em;
+        width: 100%;
+        max-width: 10em;
+        padding: 0;
+    }
+    .nav-container .nav-bar .link{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .hero-txt{
+        max-width: 75vw;
+    }
+    .hero-txt .title{
+        font-size: 2.25em;
+    }
+    .hero-txt .description{
+        font-size: 1.25em;
+    }
+    .hero-txt .link-container a{
+        font-size: 1em;
+        height: 3em;
+        width: 100%;
+    }
+   
+}

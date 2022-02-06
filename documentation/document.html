@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>hljs.highlightAll();</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css" integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://kit.fontawesome.com/e5dbe6b99b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/documentation/document.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <nav class="nav-bar" >
+                <a  class="logo" href="..//index.html">shed</a>
+                <!-- <span class="logo">shed</span> -->
+                <a id="btnHamburger" href="#" class="header__toggle  menu icon hide-for-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+            </nav>
+        </div>
+    </header>
+
+            <section class="doc-container">
+                <div class="compNAV">
+                    <div class="component-nav">
+                        <span>Getting Started</span>
+                        <li class="component-item"><a href="#usage-section" class="btn btn-xs simple-link">Usage</a></li>
+                        <span>Components</span>
+                        <li class="component-item"><a href="#alert-component" class="btn btn-xs simple-link" >Alert</a></li>
+                        <li class="component-item"><a href="#avatar-component" class="btn btn-xs simple-link" >Avatar</a></li>
+                        <li class="component-item"><a href="#badge-component" class="btn btn-xs simple-link" >Badge</a></li>
+                        <li class="component-item"><a href="#button-component" class="btn btn-xs simple-link" >Button</a></li>
+                        <li class="component-item"><a href="#card-component" class="btn btn-xs simple-link" >Card</a></li>
+                        <li class="component-item"><a href="#input-component" class="btn btn-xs simple-link" >Input</a></li>
+                        <li class="component-item"><a href="#image-component" class="btn btn-xs simple-link" >Image</a></li>
+            </div>
+</div>
+            <section class="demo-container action">
+                <div class="component-demo">
+                    <div id="usage-section" class="usage-guide">
+                        <div class="title">Usage</div>
+                    <p class="comp-description" >In order to start using the components in your project, import the stylesheet in your CSS or HTML file.</p>
+                    <div class="code-container">
+                        <pre class="code-demo" >
+                            <code class="html" >@import url("https://shed-ui.netlify.app/components.components.css");
+                                &lt;link rel="stylesheet" 
+                                href="https://shed-ui.netlify.app/components.css"></code>
+                            </pre>
+                               <br>
+                               <p class="comp-description">To get the Font Awesome Icons, import the following link tag of your project.</p>
+                               <pre class="code-demo" >
+                                   <code class="html">&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+                             font-awesome/4.7.0/css/font-awesome.min.css">
+                            </code>
+                        </pre>
+                        <p class="comp-description">You can also import individual components if you only need a few of them. The links to import individual components can be found in their respective pages.
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <section>
+                <span class="title">Components</span>
+                <div class="title-container">
+                    <li class="component-name" id="alert-component">Alert</li>
+                </div>
+                <section class="container">
+                <div role="alert" class="alert variant al-success">
+                    <div class="alert-icon">
+                        <img class="icon" src="/assets/alert-success.svg" alt="">
+                    </div>
+                    <div class="alert-content">
+                        <span class="alert-message">Success</span>
+                    <p class="alert-details">Payment was Successful</p>
+                </div>
+            </div>
+            <br>
+            <div role="alert" class="alert variant al-danger">
+                <div class="alert-icon">
+                    <img class="icon" src="/assets/alert-error.svg" alt="alert-icon">
+                </div>
+                <div class="alert-content">
+                    <span class="alert-message">Error</span>
+                <p class="alert-details">User not found !</p>
+            </div>
+        </div>
+            <br>
+            <div role="alert" class="alert variant al-info">
+                <div class="alert-icon">
+                    <img class="icon" src="/assets/alert-info.svg" alt="alert-icon"">
+                </div>
+                <div class="alert-content">
+                    <span class="alert-message">Info</span>
+                <p class="alert-details">We are going Live !</p>
+            </div>
+            </div>
+                </section>
+                <div class="code-container">
+                    <pre class="code-demo"><code class="html">&lt;div role="alert" class="alert variant al-success">
+                        &lt;div class="alert-icon">
+                            &lt;img class="icon" src="/assets/alert-success.svg" alt="alert-icon"">
+                        &lt;/div>
+                        &lt;div class="alert-content">
+                            &lt;span class="alert-message">Success&lt;/span>
+                        &lt;p class="alert-details">Payment was Successful&lt;/p>
+                    &lt;/div>
+                &lt;/div><span>
+                    &lt;!-- For Error and Info Alert, Replace class name "al-success" with "al-error" or "al-info" and replace the respective icon in "alert-icon" --></span></code></pre>
+                </div>
+                </section> 
+
+                <br>
+                
+                <section>
+                    <div class="title-container">
+                        <span class="sub-component-name">
+                            Warning ALert
+                        </span>
+                    </div>
+                    <section class="container">
+                        <div role="alert" class="alert al-warning">
+                            <div class="alert-icon">
+                                <img class="icon" src="/assets/alert-warning.svg" alt="alert-icon"">
+                            </div>
+                            <div class="alert-content">
+                                <p class="alert-details">Seems your account is about expire, upgarde now.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="code-container">
+                        <pre class="code-demo">
+                            <code class="html">&lt;div role="alert" class="alert al-warning">
+                                    &lt;div class="alert-icon">
+                                        &lt;img class="icon" src="/assets/alert-warning.svg" alt="alert-icon"">
+                                    &lt;/div>
+                                    &lt;div class="alert-content">
+                                        &lt;p class="alert-details">Seems your account is about expire, upgarde now.&lt;/p>
+                                    &lt;/div>
+                                &lt;/div></code>
+                        </pre>
+                    </section>
+                </section>
+                
+                <br>    
+
+                <section id="avatar-component">
+                    <div class="title-container">
+                        <li class="component-name" >Avatar</li>
+                        <p class="comp-description">
+                            Different size avatar's class name's are : "size-sm","size-md","size-lg","size-xl","size-2xl" . To use this, replace class name "size-sm" to "size-md" or respective size.
+                        </p>
+                    </div>
+                    <section class="container">
+                        <div class="avatar-container size-sm " >
+                            <img  src="https://bit.ly/prosper-baba" alt="avatar of Prosper Otemuyiwa">
+                        </div>
+                        <div class="avatar-container size-md " >
+                            <img  src="https://rb.gy/iepnku" alt="avatar of Josh Comeau">
+                        </div>
+                        <div class="avatar-container size-lg" >
+                            <img  src="https://rb.gy/fjwtsq" alt="avatar of Wes Bos">
+                        </div>
+                        <div class="avatar-container size-xl"  >
+                            <img  src="https://bit.ly/dan-abramov" alt="avatar of Dan Abrahmov">
+                        </div>
+                        <div class="avatar-container size-2xl" >
+                            <img  src="https://bit.ly/kent-c-dodds" alt="avatar of Kent C Dodds">
+                        </div>
+                    </section>
+                    <section class="code-container">
+                        <pre class="code-demo">
+                            <code class="html">&lt;div class="avatar-container size-sm " >
+                                    &lt;img  src="https://bit.ly/prosper-baba" alt="avatar of Prosper Otemuyiwa">
+                                &lt;/div>
+                                
+                                &lt;div class="avatar-container size-2xl" >
+                                    &lt;img  src="https://bit.ly/kent-c-dodds" alt="avatar of Kent C Dodds">
+                                &lt;/div>
+                            </code>
+                        </pre>
+                    </section>
+                </section>
+
+            <section>
+                <div class="title-container">
+                    <span class="sub-component-name">
+                       Square Avatar
+                    </span>
+                </div>
+                <section class="container">
+                    <div class="avatar-container avatar-sq size-sm" >
+                        <img  src="https://bit.ly/prosper-baba" alt="avatar of Prosper Otemuyiwa">
+                    </div>
+                    <div class="avatar-container avatar-sq size-md" >
+                        <img   src="https://rb.gy/iepnku" alt="avatar of Josh Comeau">
+                    </div>
+                    <div class="avatar-container avatar-sq size-lg" >
+                        <img   src="https://rb.gy/fjwtsq" alt="avatar of Wes Bos">
+                    </div>
+                    <div class="avatar-container avatar-sq size-xl" >
+                        <img   src="https://bit.ly/dan-abramov" alt="avatar of Dan Abrahmov">
+                    </div>
+                    <div class="avatar-container avatar-sq size-2xl" >
+                        <img   src="https://bit.ly/kent-c-dodds" alt="avatar of Kent C Dodds">
+                    </div>
+                </section>
+                <section class="code-container">
+                    <pre class="code-demo">
+                        <code class="html">&lt;div class="avatar-container avatar-sq size-sm" >
+                                    &lt;img  src="https://bit.ly/prosper-baba" alt="avatar of Prosper Otemuyiwa">
+                                &lt;/div>
+                                
+                                &lt;div class="avatar-container avatar-sq size-2xl" >
+                                    &lt;img   src="https://bit.ly/kent-c-dodds" alt="avatar of Kent C Dodds">
+                                &lt;/div>
+                        </code>
+                    </pre>
+                </section>
+            </section>
+
+            <br>
+
+            <section>
+                <div class="title-container">
+                    <span class="sub-component-name">
+                       Text Avatar
+                    </span>
+                    <p class="comp-description">
+                        Text Avatar is in 3 different size: "sm","md","lg"
+                    </p>
+                </div>
+                <section class="container">
+            <div class="avatar-container size-sm txt-avatar flex">
+                <span>SD</span>
+            </div>
+            <div class="avatar-container size-md txt-avatar flex">
+                <span>NG</span>
+            </div>
+            <div class="avatar-container size-lg txt-avatar flex">
+                <span>TP</span>
+            </div>
+        </section> 
+                <div class="code-container">
+                    <pre class="code-demo">
+                        <code class="html">&lt;div class="avatar-container size-sm txt-avatar flex">
+                                &lt;span>SD&lt;/span>
+                            &lt;/div>
+                            &lt;div class="avatar-container size-md txt-avatar flex">
+                                &lt;span>NG&lt;/span>
+                            &lt;/div>
+                            &lt;div class="avatar-container size-lg txt-avatar flex">
+                                &lt;span>TP&lt;/span>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <br>
+
+            <section id="badge-component" >
+                <div class="title-container">
+                    <span class="component-name">Badge</span>
+                    <p class="comp-description">
+                        Badge Component also has different sizes: "badge-sm","badge-md","badge-lg","badge-xl","badge-2xl".
+                    </p>
+                </div>
+<section class="container">
+        <div class="avatar-container  size-sm">
+            <img class="avatar-circle" src="https://bit.ly/prosper-baba" alt="avatar of Prosper Otemuyiwa">
+            <i class="avatar-badge badge-sm "></i>
+        </div>
+
+        <div class="avatar-container size-md" >
+            <img class="avatar-circle" src="https://rb.gy/iepnku"  alt="avatar of Josh Comeau">
+            <i class="avatar-badge badge-md"></i>
+        </div>
+
+        <div class="avatar-container size-lg" >
+            <img class="avatar-circle" src="https://rb.gy/fjwtsq" alt="avatar of Wes Bos"  >
+            <i class="avatar-badge badge-lg"></i>
+        </div>
+        <div class="avatar-container size-xl"  >
+            <img class="avatar-circle" src="https://bit.ly/dan-abramov" alt="avatar of Dan Abrahmov" >
+            <i class="avatar-badge badge-xl"></i>
+        </div>
+        <div class="avatar-container size-2xl" >
+            <img class="avatar-circle" src="https://bit.ly/kent-c-dodds"  alt="avatar of Kent C Dodds">
+            <i class="avatar-badge badge-2xl"></i>  
+            </div>
+    </section>
+                <div class="code-container">
+                    <pre class="code-demo">
+                        <code class="html">&lt;div class="avatar-container  size-sm">
+                                &lt;img class="avatar-circle" src="https://bit.ly/prosper-baba" alt="avatar of Prosper Otemuyiwa">
+                                &lt;i class="avatar-badge badge-sm ">&lt;/i>
+                            &lt;/div>
+                    &lt;!-- To try different badge size replace class name "badge-sm" to respective different badge size class name. -->
+                            &lt;div class="avatar-container size-2xl" >
+                                &lt;img class="avatar-circle" src="https://bit.ly/kent-c-dodds"  alt="avatar of Kent C Dodds">
+                                &lt;i class="avatar-badge badge-2xl">&lt;/i>  
+                                &lt;/div>
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <br>
+            
+            <section>
+                <div class="title-container">
+                    <span class="sub-component-name">
+                        Icon Badge
+                    </span>
+                </div>
+                <section class="container">
+                    <div class="badge-icon">
+                        <i class="icon fas fa-shopping-cart avatar-circle"></i>
+                        <span class="flex badge">1</span>
+                </div>
+                <div class="badge-icon" >
+                    <i class="icon far fa-envelope avatar-circle"></i>
+                    <span class="flex badge">2</span>
+            </div>
+                </section>
+
+                <section class="code-container">
+                    <pre class="code-demo">
+                        <code class="html">&lt;div class="badge-icon">
+                                &lt;i class="icon fas fa-shopping-cart avatar-circle">&lt;/i>
+                                &lt;span class="flex badge">1&lt;/span>
+                        &lt;/div>
+
+                        &lt;div class="badge-icon" >
+                            &lt;i class="icon far fa-envelope avatar-circle">&lt;/i>
+                            &lt;span class="flex badge">2&lt;/span>
+                    &lt;/div>
+                        </code>
+                    </pre>
+                </section>
+
+            </section>
+            
+            <br>
+
+            <section id="button-component">
+                <div class="title-container">
+                    <span class="component-name">Button</span>
+                    <p class="comp-description">
+                        Button's are available in different sizes: "btn-sm","btn-md","btn-lg","btn-xl"
+                    </p>
+                </div>
+
+                <section class="container">
+                    <button class="btn btn-xs">Send</button>
+                    <button class="btn btn-sm">Send</button>
+                    <button class="btn btn-md">Send</button>
+                    <button class="btn btn-lg">Email</button>
+                    <button class="btn btn-xl">Sign up</button>
+                    <button class="btn btn-sm">
+                        Send
+                        <i class="icon far fa-paper-plane"></i>
+                    </button>
+                </section>
+                <section class="code-container">
+                    <pre class="code-demo">
+                        <code class="html">&lt;button class="btn btn-sm">Send&lt;/button>
+                    &lt;!-- To use different button size replace class name "btn-sm" with respective size  -->
+                    &lt;button class="btn btn-xl">Sign up&lt;/button>
+                    &lt;!-- Button with icon -->
+                    &lt;button class="btn btn-sm">Send&lt;i class="icon far fa-paper-plane">&lt;/i>&lt;/button>
+                        </code>
+                    </pre>
+                </section>
+            </section>
+            
+            <br>
+
+            <section>
+                <div class="title-container">
+                    <span class="sub-component-name">Outline Button</span>
+                </div>
+                
+                <section class="container">
+                    <button class="btn btn-sm outline">Primary color</button>
+                    <button class="btn btn-sm outline success ">Success</button>
+                    <button class="btn btn-sm outline danger ">Danger</button>
+                </section>
+                
+                <section class="code-container">
+                    <pre class="code-demo">
+                        <code class="html">&lt;button class="btn btn-sm outline">Primary color&lt;/button>
+                            &lt;button class="btn btn-sm outline success ">Success&lt;/button>
+                            &lt;button class="btn btn-sm outline danger ">Danger&lt;/button>
+                        </code>
+                    </pre>
+                </section>
+            </section>
+                
+            <br>
+
+            <section>
+                <div class="title-container">
+                    <span class="sub-component-name">Floating Button</span>
+                </div>
+
+                <section class="container">
+                    <div class="floating-btn-container">
+                        <button class="btn btn-md float-btn">
+                            <i class="icon fas fa-plus"></i>
+                        </button>
+                            <div class="floating-items hidden">
+                                <button class="btn btn-md floating-item">
+                                    <i class="icon fas fa-paperclip"></i>
+                                </button>
+                                <button class="btn btn-md floating-item">
+                                    <i class=" icon fas fa-arrow-down"></i>
+                                </button>
+                                <button class="btn btn-md floating-item">
+                                    <i class="icon fas fa-map-marker-alt"></i>
+                                </button>
+                            </div>
+                    </div>
+                </section>
+
+                <section class="code-container">
+                    <pre class="code-demo">
+                        <code class="html">&lt;div class="floating-btn-container">
+                                &lt;button class="btn btn-md float-btn">&lt;i class="icon fas fa-plus">&lt;/i>&lt;/button>
+                                    &lt;div class="floating-items hidden">
+                                        &lt;button class="btn btn-md floating-item">&lt;i class="icon fas fa-paperclip">&lt;/i>&lt;/button>
+                                        &lt;button class="btn btn-md floating-item">&lt;i class=" icon fas fa-arrow-down">&lt;/i>&lt;/button>
+                                        &lt;button class="btn btn-md floating-item">&lt;i class="icon fas fa-map-marker-alt">&lt;/i>&lt;/button>
+                                    &lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                </section>
+            </section>
+
+            <br>
+
+            <section id="card-component" >
+                <div class="title-container">
+                    <span class="component-name">
+                        Card
+                    </span>
+                </div>
+
+                <section class="container">
+                    <div class="card-container">
+                        <div class="card-header flex">
+                            <span>Mar 25,2022</span>
+                            <a class="link flex btn-xs" href="#">Design</a>
+                        </div>
+                        <div class="card-content">
+                            <h1 class="title">Accessibility tools for designers and developers</h1>
+                            <p class="card-description" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia nostrum quis blanditiis at excepturi veritatis laborum cupiditate et aliquid molestiae?</p>
+                        </div>
+                        <div class="card-footer flex">
+                            <button class="btn btn-xs">Read More</button>
+                            <div class="card-author-box flex">
+                                <img class="avatar-circle size-xs"  src="https://rb.gy/fjwtsq" alt="">
+                                <span>Wes Bos</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="code-container">
+                    <pre class="code-demo">
+                        <code class="html">&lt;div class="card-container">
+                                &nbsp;&lt;div class="card-header flex">
+                                &nbsp;&nbsp;&lt;span>Mar 25,2022&lt;/span>
+                                &nbsp;&nbsp;&lt;a class="link flex btn-xs" href="#">Design&lt;/a>
+                                &nbsp;&lt;/div>
+                                &nbsp;&lt;div class="card-content">
+                                &nbsp;&nbsp;&lt;h1 class="title">..text..&lt;/h1>
+                                &nbsp;&nbsp;&lt;p class="card-description" >..text..&lt;/p>
+                                &nbsp;&lt;/div>
+                                &nbsp;&lt;div class="card-footer flex">
+                                &nbsp;&nbsp;&lt;button class="btn btn-xs">Read More&lt;/button>
+                                &nbsp;&nbsp;&nbsp;&lt;div class="card-author-box flex">
+                                &nbsp;&nbsp;&nbsp;&lt;img class="avatar-circle size-xs"  src="https://rb.gy/fjwtsq" alt="Avatar of Wesbos">
+                                &nbsp;&nbsp;&nbsp;&lt;span>Wes Bos&lt;/span>
+                                &nbsp;&nbsp;&lt;/div>
+                                &nbsp;&lt;/div>
+                        &lt;/div></code>
+                    </pre>
+                </section>
+
+            </section>
+
+            <br>
+
+            <section>
+                <div class="title-container">
+                    <span class="sub-component-name">Vertical card</span>
+                </div>
+
+                <section class="container">
+                    <div class="vertical-card">
+                        <div class="my-badge">You Save 80%</div>
+                        <div class="card-header card-img">
+                            <img src="https://rb.gy/csnlne" alt="product image of boat headphone">
+                    </div>
+                    <div class="card-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="card-description">
+                            <div class="title">boAt Rockerz 550</div>
+                            <span class="price" >Rs. 1,999.00</span>
+                        </div>
+                        <div class="card-clr-variant">
+                            <li class="bg-primary" ></li>
+                            <li class="bg-black"></li>
+                            <li class="bg-red" ></li>
+                            <li class="bg-teal" ></li>
+                        </div>
+                        <button class="btn btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="code-container">
+                    <pre class="code-demo">
+                        <code class="html">&lt;div class="vertical-card">
+                            &lt;div class="my-badge">You Save 80%&lt;/div>
+                            &lt;div class="card-header card-img">
+                                &lt;img src="https://rb.gy/csnlne" alt="product image of boat headphone">
+                        &lt;/div>
+                        &lt;div class="card-content">
+                            &lt;div class="rating">
+                                &lt;i class="fas fa-star">&lt;/i>
+                                &lt;i class="fas fa-star">&lt;/i>
+                                &lt;i class="fas fa-star">&lt;/i>
+                                &lt;i class="fas fa-star">&lt;/i>
+                                &lt;i class="fas fa-star">&lt;/i>
+                            &lt;/div>
+                            &lt;div class="card-description">
+                                &lt;div class="title">boAt Rockerz 550&lt;/div>
+                                &lt;span class="price" >Rs. 1,999.00&lt;/span>
+                            &lt;/div>
+                            &lt;div class="card-clr-variant">
+                                &lt;li class="bg-primary" >&lt;/li>
+                                &lt;li class="bg-black">&lt;/li>
+                                &lt;li class="bg-red" >&lt;/li>
+                                &lt;li class="bg-teal" >&lt;/li>
+                            &lt;/div>
+                            &lt;button class="btn btn-sm">Add to Cart&lt;/button>
+                            &lt;/div>
+                        &lt;/div></code>
+                    </pre>
+                </section>
+
+                </section>
+                
+                <br>
+
+                <section>
+                    <div class="title-container">
+                        <span class="sub-component-name">
+                            Horizontal-card
+                        </span>
+                    </div>
+
+                    <section class="container">
+                        <div class="horizontal-card">
+                            <div class="card-header">
+                                <img class="" src="https://rb.gy/ykbitg" alt="Iphone 13 Image">
+                            </div>
+                            <div class="card-content">
+                                <div class="title">Apple iPhone 12 (64GB) - White</div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="card-description">
+                                    <div class="price">₹ 56,999
+                                        <span class="strike" >₹65,999</span>
+                                        <span class="discount-txt">Save ₹8,901 (14%)</span>
+                                    </div>
+                                    <p>10% Off on Indusind bank ltd. Cards</p>
+                                </div>
+                                <div class="card-footer">             
+                                    <div class="footer-1">
+                                        <img src="https://rb.gy/orixca" alt="prime-logo">
+                                        <p>Get it by <span>Tomorrow 3PM</span></p>
+                                    </div>
+                                    <p>FREE Delivery by Amazon</p>
+                                    <button class="btn btn-sm">Add to cart</button>
+                                </div> 
+                                </div>
+                        </div>
+                    </section>
+
+                    <section class="code-container">
+                        <pre class="code-demo">
+                            <code class="html">&lt;div class="horizontal-card">
+                                &lt;div class="card-header">
+                                    &lt;img class="" src="https://rb.gy/ykbitg" alt="Iphone 13 Image">
+                                &lt;/div>
+                                &lt;div class="card-content">
+                                    &lt;div class="title">Apple iPhone 12 (64GB) - White&lt;/div>
+                                    &lt;div class="rating">
+                                        &lt;i class="fas fa-star">&lt;/i>
+                                        &lt;i class="fas fa-star">&lt;/i>
+                                        &lt;i class="fas fa-star">&lt;/i>
+                                        &lt;i class="fas fa-star">&lt;/i>
+                                        &lt;i class="fas fa-star">&lt;/i>
+                                    &lt;/div>
+                                    &lt;div class="card-description">
+                                        &lt;div class="price">₹ 56,999
+                                            &lt;span class="strike" >₹65,999&lt;/span>
+                                            &lt;span class="discount-txt">Save ₹8,901 (14%)&lt;/span>
+                                        &lt;/div>
+                                        &lt;p>10% Off on Indusind bank ltd. Cards&lt;/p>
+                                    &lt;/div>
+                                    &lt;div class="card-footer">             
+                                        &lt;div class="footer-1">
+                                            &lt;img src="https://rb.gy/orixca" alt="prime-logo">
+                                            &lt;p>Get it by &lt;span>Tomorrow 3PM&lt;/span>&lt;/p>
+                                        &lt;/div>
+                                        &lt;p>FREE Delivery by Amazon&lt;/p>
+                                        &lt;button class="btn btn-sm">Add to cart&lt;/button>
+                                    &lt;/div> 
+                                    &lt;/div>
+                            &lt;/div></code>
+                        </pre>
+                    </section>
+                </section>
+
+                <br>
+
+                <section>
+                    <div class="title-container">
+                        <span class="sub-component-name">Dismiss Card
+                        </span>
+                    </div>
+
+                    <section class="container">
+                        <div class="card-container dismiss-card">
+                            <div class="card-header">
+                                <div class="title">
+                                    Welcome to Dribble 
+                                </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-description">
+                                Find design Inspiration. Share your work. Join the #1 creative community online.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-xs">
+                                Sign up with email
+                            </button>
+                            <a href="#">
+                                <i class="icon avatar-circle fab fa-google"></i>
+                            </a>
+                        </div>
+                            <button class="close-icon flex">
+                                <i class="icon fas fa-times"></i>
+                            </button> 
+                    </div>
+                    </section>
+
+                    <section class="code-container">
+                        <pre class="code-demo">
+                            <code class="html">&lt;div class="card-container dismiss-card">
+                                &lt;div class="card-header">
+                                    &lt;div class="title">Welcome to Dribble&lt;/div>
+                            &lt;/div>
+                            &lt;div class="card-content">
+                                &lt;p class="card-description">..text..lt;/p>
+                            &lt;/div>
+                            &lt;div class="card-footer">
+                                &lt;button class="btn btn-xs">Sign up with email&lt;/button>
+                                &lt;a href="#">&lt;i class="icon avatar-circle fab fa-google">&lt;/i>&lt;/a>
+                            &lt;/div>
+                                &lt;button class="close-icon flex">&lt;i class="icon fas fa-times">&lt;/i>&lt;/button> 
+                        &lt;/div></code>
+                        </pre>
+                    </section>
+                </section>
+
+                <br>
+
+                <section>
+                    <div class="title-container">
+                        <span class="sub-component-name">
+                            Overlay Card
+                        </span>
+                    </div>
+
+                    <section class="container">
+                        <div class=" card-overlay">
+                            <div class="img-overlay">
+                                <img src="/Assets/nature.jpg" alt="nature image">
+                            </div>
+                            <div class="card-overlay-content">
+                                <h1 class="title" >Bologna</h1>
+                                <span>Romagna,Italy</span>
+                                <p class="card-description" >It is seventh most populous city in Italy, at the heart of a metroplitan area of about one million people.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="code-container">
+                        <pre class="code-demo">
+                            <code class="html">&lt;div class=" card-overlay">
+                                &lt;div class="img-overlay">
+                                    &lt;img src="/Assets/nature.jpg" alt="nature image">
+                                &lt;/div>
+                                &lt;div class="card-overlay-content">
+                                    &lt;h1 class="title" >Bologna&lt;/h1>
+                                    &lt;span>Romagna,Italy&lt;/span>
+                                    &lt;p class="card-description" >..text..&lt;/p>
+                                &lt;/div>
+                            &lt;/div></code>
+                        </pre>
+                    </section>
+                </section>
+
+                <br>
+
+                <section>
+                    <div class="title-container">
+                        <span class="sub-component-name">
+                            Text only card
+                        </span>
+                    </div>
+
+                    <section class="container">
+                        <div class="card-container text-card">
+                            <div class="card-content">
+                                <h1 class="title" >AP Psychology - Course :
+                                </h1>
+                                <p class="card-description" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias exercitationem, molestiae ad minima voluptatem vitae expedita ea eos aut dolorem illum architecto vel animi esse officia dignissimos molestias error odit rerum omnis unde reprehenderit. Incidunt dicta quisquam sint perspiciatis official.</p>
+                            </div>
+                            <div class="card-footer">
+                                <span>Sept 23,2002</span>
+                            </div>
+                    </div>
+                    </section>
+
+                    <section class="code-container">
+                        <pre class="code-demo">
+                            <code class="html">&lt;div class="card-container text-card">
+                                &lt;div class="card-content">
+                                    &lt;h1 class="title" >AP Psychology - Course : &lt;/h1>
+                                    &lt;p class="card-description" >..text..&lt;/p>
+                                &lt;/div>
+                                &lt;div class="card-footer">
+                                    &lt;span>Sept 23,2002&lt;/span>
+                                &lt;/div>
+                        &lt;/div></code>
+                        </pre>
+                    </section>
+                </section>
+
+                <br>
+
+                <section id="input-component" >
+                    <div class="title-container">
+                        <span class="component-name">
+                            Input
+                        </span>
+                    </div>
+
+                    <section class="container">
+                        <form action="">
+                            <div class="input-container validate ">
+                                <input type="text" class="input success" placeholder="Username" required >
+                                <div class="validation-style">
+                                    <img class="icon" src="/Assets/success.png" alt="input success icon">
+                                    <span class="success-txt" >Username is available</span>
+                                </div>
+                            </div>
+                            <div class="input-container validate">
+                                <input type="password" class="input error" placeholder="Password" required >
+                                <div class="validation-style">
+                                    <img class="icon" src="/Assets/error.png" alt="input error icon">
+                                    <span class="error-txt" >Password is incorrect</span>
+                                </div>
+                                </div>
+                            <textarea class="txt-area" role="textbox" placeholder="Write a Message" required ></textarea>
+                        </form>
+                    </section>
+
+                    <section class="code-container">
+                        <pre class="code-demo">
+                            <code class="html">&lt;form action="">
+                                &lt;div class="input-container validate ">
+                                    &lt;input type="text" class="input success" placeholder="Username" required >
+                                    &lt;div class="validation-style">
+                                        &lt;img class="icon" src="/Assets/success.png" alt="input success icon">
+                                        &lt;span class="success-txt" >Username is available&lt;/span>
+                                    &lt;/div>
+                                &lt;/div>
+
+                                &lt;div class="input-container validate">
+                                    &lt;input type="password" class="input error" placeholder="Password" required >
+                                    &lt;div class="validation-style">
+                                        &lt;img class="icon" src="/Assets/error.png" alt="input error icon">
+                                        &lt;span class="error-txt" >Password is incorrect&lt;/span>
+                                    &lt;/div>
+                                    &lt;/div>
+
+                                &lt;textarea class="txt-area" role="textbox" placeholder="Write a Message" required >&lt;/textarea>
+                            &lt;/form></code>
+                        </pre>
+                    </section>
+                </section>
+
+                <br>
+
+                <section id="image-component">
+                    <div class="title-container">
+                        <span class="component-name">
+                            Responsive Image
+                        </span>
+                    </div>
+
+                    <section class="container">
+                        <img src="https://rb.gy/1w9cjm" alt="Responsive Image" class="res">
+                    </section>
+
+                    <section class="code-container">
+                        <pre class="code-demo">
+                        <code class="html">&lt;img src="https://rb.gy/1w9cjm" alt="Responsive Image" class="res"></code>
+                        </pre>
+                    </section>
+                </section>
+
+                <br>
+
+                <section>
+                    <div class="title-container">
+                        <span class="component-name">
+                            Circle Image
+                        </span>
+                    </div>
+
+                    <section class="container">
+                        <img src="https://rb.gy/fjwtsq" alt="avatar of wesbos" class="size-3xl avatar-circle">
+                    </section>
+
+                    <section class="code-container">
+                        <pre class="code-demo">
+                            <code class="html">&lt;img src="https://rb.gy/fjwtsq" alt="avatar of wesbos" class="size-3xl avatar-circle"></code>
+                        </pre>
+                    </section>
+                </section>
+            <br>
+<!-- Clsoing tag of doc-section-->
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=css&amp;skin=sunburst"></script>
+<script src="/components/components.js"></script>
+<script src="/documentation/document.js"></script>
+
+</html>

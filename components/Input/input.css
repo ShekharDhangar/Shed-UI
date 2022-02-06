@@ -1,32 +1,41 @@
 @import url(/utils.css);
 
 .input-container{
-    max-width: 25rem;
+    width: 100%;
+    max-width: 30rem;
     position: relative;
     width: 100%;
 }
 .validate .input{
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.2rem;
 }
 .input-container > input{
     font-size: 1.75rem;
     outline: none;
     width: 100%;
     resize: none;
-    padding: 1rem 0;
-    padding-inline-start: 1rem;
+    padding: 0.75rem 0;
+    font-weight: 600;
+    padding-left: 1rem;
+    border: 0.35rem solid var(--clr-black);
+    padding-right: 4rem;
     border-radius: 0.75rem;
 }
-.input-container.validate .input.success{
-    border: 2px solid var(--clr-blue);
+.input-container.validate:hover{
+    transition: 0.2s all linear;
 }
-.input-container.validate .input.error{
-    border: 2px solid var(--clr-red);
+.input-container.validate .input.success:hover{
+    border: 0.35rem solid var(--success-clr);
+    color: var(--success-clr);
+}
+.input-container.validate .input.error:hover{
+    border: 0.35rem solid var(--clr-red);
+    color: var(--clr-red);
 }
 .input-container.validate  .icon{
     position: absolute;
     width: 2rem;
-    top: 1.25rem;
+    top: 1rem;
     right: 1.25rem;
     display: flex;
     justify-content: flex-start;
@@ -36,7 +45,7 @@
     margin: 0;
 }
 .success-txt{
-    color: var(--clr-blue);
+    color: var(--success-clr);
 }
 .error-txt{
     color: var(--clr-red);
@@ -44,11 +53,15 @@
 .txt-area{
     font-size: 1.75rem;
     outline: none;
-    max-width: 25rem;
+    max-width: 30rem;
+    height: 20rem;
     width: 100%;
     resize: none;
     box-sizing: border-box;
     padding: 1rem;
     border-radius: 0.75rem;
-    border: 2px solid var(--clr-ltgreen);
+    border: 0.25rem solid var(--clr-black);
+}
+.txt-area:hover{
+    border: 0.35rem solid var(--clr-teal);
 }

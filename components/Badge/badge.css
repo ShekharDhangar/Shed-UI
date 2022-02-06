@@ -1,8 +1,6 @@
 @import url(/components/Avatar/avatar.css);
 @import url(/utils.css);
-.avatar-container{
-    overflow: initial;
-}
+
 .avatar-badge{
     position: absolute;
     border-radius: 50%;
@@ -18,24 +16,29 @@
     right: 0.2rem;
     width: 1rem;
     height: 1rem;
+    background-color: var(--clr-high-green);
 }
 .badge-md{
     border: 0.3rem solid white;
     width: 1.5rem;
     height: 1.5rem;
+    background-color: var(--clr-maroon);
 }
 .badge-lg{
     border: 0.4rem solid white;
     width: 2.2rem;
     height: 2.2rem;
+    background-color: var(--clr-purple);
 }
 .badge-xl{
     width: 2.5rem;
     height: 2.5rem;
+    background-color: var(--clr-skyBlue);
 }
 .badge-2xl{
     width: 3rem;
     height: 3rem;
+    background-color: var(--primary-clr);
 }
 /* badge-icon */
 .badge-icon{
@@ -52,7 +55,7 @@
 }
 .badge-icon .badge{
     border-radius: 50%;
-    background-color: var(--clr-red);
+    background-color: var(--clr-high-green);
     position: absolute;
     font-size: 1.75rem;
     top: 0rem;
