@@ -55,6 +55,9 @@
 .light-font{
     font-weight: 200;
 }
+.regular-font{
+    font-weight: 400;
+}
 .title{
     font-size: 3rem;
 }
