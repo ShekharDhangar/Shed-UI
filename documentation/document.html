@@ -505,66 +505,89 @@
 
             <section>
                 <div class="title-container">
-                    <span class="sub-component-name">Vertical card</span>
+                    <span class="sub-component-name">Product card(Vertical)</span>
                 </div>
 
                 <section class="container">
-                    <div class="vertical-card">
-                        <div class="my-badge">You Save 80%</div>
-                        <div class="card-header card-img">
-                            <img src="https://rb.gy/csnlne" alt="product image of boat headphone">
-                    </div>
-                    <div class="card-content">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                    <div class="product-card-container">
+                        <div class="flex w-100 relative product-card">
+                          <div class="w-100 h-100 relative product-header">
+                                  <div class="flex wishlist-badge"><i class="icon sidze-xs fa-regular fa-heart"></i></div>
+                            <div class="w-100 relative product-img-container">
+                              <img class="w-100 h-100 absolute inset"
+                                src="https://images.bewakoof.com/t320/orchid-petal-basic-hoodies-454624-1640779904-1.jpg"
+                                alt="product image of boat headphone"
+                              />
+                            </div>
+                            <div class="btn-container hover-cart-btn-container  ">
+                                <button class="w-100 btn btn-sm flex cart-btn">Add To Cart</button>
+                            </div>
+                          </div>
+                          <div class="w-100 product-content">
+                            <span class="product-title lt-bold">Roadster</span>
+                            <div class="product-description lt-bold">
+                              Red Plum layered sweatshirt Hoodie
+                            </div>
+                            <div class="ratings">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="relative flex product-price-details">
+                              <span class="product-price">₹799</span>
+                              <span class="strike-txt og-price txt-grey">₹1499</span>
+                            </div>
+                          </div>
+                          <div class="w-100 product-footer">
+                              <div class=" btn-container mobile-cart-btn-container">
+                                  <button class="w-100 btn btn-xs cart-btn">Add to Cart</button>
+                              </div>
+                          </div>
                         </div>
-                        <div class="card-description">
-                            <div class="title">boAt Rockerz 550</div>
-                            <span class="price" >Rs. 1,999.00</span>
-                        </div>
-                        <div class="card-clr-variant">
-                            <li class="bg-primary" ></li>
-                            <li class="bg-black"></li>
-                            <li class="bg-red" ></li>
-                            <li class="bg-teal" ></li>
-                        </div>
-                        <button class="btn btn-sm">Add to Cart</button>
-                        </div>
-                    </div>
+                      </div> 
                 </section>
-
                 <section class="code-container">
                     <pre class="code-demo">
-                        <code class="html">&lt;div class="vertical-card">
-                            &lt;div class="my-badge">You Save 80%&lt;/div>
-                            &lt;div class="card-header card-img">
-                                &lt;img src="https://rb.gy/csnlne" alt="product image of boat headphone">
-                        &lt;/div>
-                        &lt;div class="card-content">
-                            &lt;div class="rating">
-                                &lt;i class="fas fa-star">&lt;/i>
-                                &lt;i class="fas fa-star">&lt;/i>
-                                &lt;i class="fas fa-star">&lt;/i>
-                                &lt;i class="fas fa-star">&lt;/i>
-                                &lt;i class="fas fa-star">&lt;/i>
+                        <code class="html">&lt;div class="product-card-container">
+                            &lt;div class="flex w-100 relative product-card">
+                              &lt;div class="w-100 h-100 relative product-header">
+                                      &lt;div class="flex wishlist-badge">&lt;i class="icon sidze-xs fa-regular fa-heart">&lt;/i>&lt;/div>
+                                &lt;div class="w-100 relative product-img-container">
+                                  &lt;img class="w-100 h-100 absolute inset"
+                                    src="https://images.bewakoof.com/t320/orchid-petal-basic-hoodies-454624-1640779904-1.jpg"
+                                    alt="product image of boat headphone"
+                                  />
+                                &lt;/div>
+                                &lt;div class="btn-container hover-cart-btn-container  ">
+                                    &lt;button class="w-100 btn btn-sm flex cart-btn">Add To Cart&lt;/button>
+                                &lt;/div>
+                              &lt;/div>
+                              &lt;div class="w-100 product-content">
+                                &lt;span class="product-title lt-bold">Roadster&lt;/span>
+                                &lt;div class="product-description lt-bold">
+                                  Red Plum layered sweatshirt Hoodie
+                                &lt;/div>
+                                &lt;div class="ratings">
+                                    &lt;span>&lt;i class="fas fa-star">&lt;/i>&lt;/span>
+                                    &lt;span>&lt;i class="fas fa-star">&lt;/i>&lt;/span>
+                                    &lt;span>&lt;i class="fas fa-star">&lt;/i>&lt;/span>
+                                    &lt;span>&lt;i class="fas fa-star">&lt;/i>&lt;/span>
+                                    &lt;span>&lt;i class="fas fa-star">&lt;/i>&lt;/span>
+                                &lt;/div>
+                                &lt;div class="relative flex product-price-details">
+                                  &lt;span class="product-price">₹799&lt;/span>
+                                  &lt;span class="strike-txt og-price txt-grey">₹1499&lt;/span>
+                                &lt;/div>
+                              &lt;/div>
+                              &lt;div class="w-100 product-footer">
+                                  &lt;div class=" btn-container mobile-cart-btn-container">
+                                      &lt;button class="w-100 btn btn-xs cart-btn">Add to Cart&lt;/button>
+                                  &lt;/div>
+                              &lt;/div>
                             &lt;/div>
-                            &lt;div class="card-description">
-                                &lt;div class="title">boAt Rockerz 550&lt;/div>
-                                &lt;span class="price" >Rs. 1,999.00&lt;/span>
-                            &lt;/div>
-                            &lt;div class="card-clr-variant">
-                                &lt;li class="bg-primary" >&lt;/li>
-                                &lt;li class="bg-black">&lt;/li>
-                                &lt;li class="bg-red" >&lt;/li>
-                                &lt;li class="bg-teal" >&lt;/li>
-                            &lt;/div>
-                            &lt;button class="btn btn-sm">Add to Cart&lt;/button>
-                            &lt;/div>
-                        &lt;/div></code>
+                          &lt;/div></code>
                     </pre>
                 </section>
 
@@ -783,49 +806,145 @@
                         <span class="component-name">
                             Input
                         </span>
+                        <p class="comp-description">
+                            To see the 2nd form with animation, please click <a href="../components/Input/input.html" class="btn-sm link">HERE</a>. 
+                        </p>
+                            <p class="comp-description">    
+                                To implement the same animation just remove replace the classname of "form-container" from "grid" to "flex" and add classname "none" to SignUp form(2nd Form).
+                            </p>
                     </div>
-
                     <section class="container">
-                        <form action="">
-                            <div class="input-container validate ">
-                                <input type="text" class="input success" placeholder="Username" required >
-                                <div class="validation-style">
-                                    <img class="icon" src="/Assets/success.png" alt="input success icon">
-                                    <span class="success-txt" >Username is available</span>
+                        <div class=" form-container grid">
+                            <form action="login form register" id="login" class="login-form">
+                                <h2 class="form-title txt-center h2">Sign in</h2>
+                                <div class="input-box">
+                                <div class="input-with-icon">
+                                    <i class="icon size-xs far fa-user "></i>
+                                    <input type="text"
+                                    id = "check-email-inp" placeholder="Email" class="input email-input" required>
                                 </div>
-                            </div>
-                            <div class="input-container validate">
-                                <input type="password" class="input error" placeholder="Password" required >
-                                <div class="validation-style">
-                                    <img class="icon" src="/Assets/error.png" alt="input error icon">
-                                    <span class="error-txt" >Password is incorrect</span>
+                                    <div class="flex validation-style">
+                                        <img class="icon size-xs" src="/assets/warning.png" alt="">
+                                        <span class="msg-txt error-txt lt-bold">
+                                            Please enter correct email</div>
+                                        </span>
+                                    </div>
+                                    <div class="input-box">
+                                        <div class="input-with-icon">
+                                            <i class="icon fas fa-key"></i>
+                                            <input type="password" placeholder="Password" 
+                                            id = "check-password-inp"
+                                            class="input password-input">
+                                        </div>
+                                        <div class="flex validation-style">
+                                            <img class="icon size-xs" src="/assets/warning.png" alt="">
+                                            <span class="error-txt lt-bold">
+                                                Please enter correct Password</div>
+                                            </span>
+                                        </div>
+                                
+                                <div class="flex remember-forgot-grp">
+                                    <div class="flex remember-box">
+                                        <input type="checkbox" id="yes" name="bydefault" value="yes" class="form-checkbox pointer">
+                                        <label for="yes" class="lt-bold txt-xs">Remember me</label>
+                                    </div>
+                                    <a href="#" class="login-forgot txt-sm txt-grey">Forgot password?</a>
                                 </div>
+                                <button href="#" type="submit" class="btn btn-md link login-btn">Sign in</button>
+                
+                                <div class="signup-way">
+                                    <span class="account-no">Don't have an Account?</span>
+                                    <a id="try-signup" href="#">Create one</a>
                                 </div>
-                            <textarea class="txt-area" role="textbox" placeholder="Write a Message" required ></textarea>
-                        </form>
+                            </form>
+                        </div>
                     </section>
 
                     <section class="code-container">
                         <pre class="code-demo">
-                            <code class="html">&lt;form action="">
-                                &lt;div class="input-container validate ">
-                                    &lt;input type="text" class="input success" placeholder="Username" required >
-                                    &lt;div class="validation-style">
-                                        &lt;img class="icon" src="/Assets/success.png" alt="input success icon">
-                                        &lt;span class="success-txt" >Username is available&lt;/span>
+                            <code class="html">&lt;!-- SignIn Form -->
+                                &lt;div class="flex form-container">
+                                &lt;form action="login form register" id="login" class="login-form">
+                                    &lt;h2 class="form-title txt-center h2">Sign in&lt;/h2>
+                                    &lt;div class="input-box">
+                                    &lt;div class="input-with-icon">
+                                        &lt;i class="icon size-xs far fa-user ">&lt;/i>
+                                        &lt;input type="text"
+                                        id = "check-email-inp" placeholder="Email" class="input email-input" required>
                                     &lt;/div>
-                                &lt;/div>
-
-                                &lt;div class="input-container validate">
-                                    &lt;input type="password" class="input error" placeholder="Password" required >
-                                    &lt;div class="validation-style">
-                                        &lt;img class="icon" src="/Assets/error.png" alt="input error icon">
-                                        &lt;span class="error-txt" >Password is incorrect&lt;/span>
+                                        &lt;div class="flex validation-style">
+                                            &lt;img class="icon size-xs" src="/assets/warning.png" alt="">
+                                            &lt;span class="msg-txt error-txt lt-bold">
+                                                Please enter correct email&lt;/div>
+                                            &lt;/span>
+                                        &lt;/div>
+                                        &lt;div class="input-box">
+                                            &lt;div class="input-with-icon">
+                                                &lt;i class="icon fas fa-key">&lt;/i>
+                                                &lt;input type="password" placeholder="Password" 
+                                                id = "check-password-inp"
+                                                class="input password-input">
+                                            &lt;/div>
+                                            &lt;div class="flex validation-style">
+                                                &lt;img class="icon size-xs" src="/assets/warning.png" alt="">
+                                                &lt;span class="error-txt lt-bold">
+                                                    Please enter correct Password&lt;/div>
+                                                &lt;/span>
+                                            &lt;/div>
+                                    
+                                    &lt;div class="flex remember-forgot-grp">
+                                        &lt;div class="flex remember-box">
+                                            &lt;input type="checkbox" id="yes" name="bydefault" value="yes" class="form-checkbox pointer">
+                                            &lt;label for="yes" class="lt-bold txt-xs">Remember me&lt;/label>
+                                        &lt;/div>
+                                        &lt;a href="#" class="login-forgot txt-sm txt-grey">Forgot password?&lt;/a>
                                     &lt;/div>
+                                    &lt;button href="#" type="submit" class="btn btn-md link login-btn">Sign in&lt;/button>
+                    
+                                    &lt;div class="signup-way">
+                                        &lt;span class="account-no">Don't have an Account?&lt;/span>
+                                        &lt;a id="try-signup" href="#">Create one&lt;/a>
                                     &lt;/div>
-
-                                &lt;textarea class="txt-area" role="textbox" placeholder="Write a Message" required >&lt;/textarea>
-                            &lt;/form></code>
+                                &lt;/form>
+                                <!-- SignUp Form(2nd Form) -->
+                                &lt;form action="sign-up form register" id="sign-up" class="signup-form none">
+                                    &lt;h2 class="form-title txt-center h2 ">Create Account&lt;/h2>
+                                    &lt;div class="flex-container social-login">
+                                        &lt;a href="#">&lt;img  class="icon size-xs" src="https://img.icons8.com/color/48/000000/google-logo.png"/>&lt;/a>
+                                        &lt;a href="#">&lt;img class="icon size-xs" src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/>&lt;/a>
+                                        &lt;a href="#">&lt;img class="icon size-xs" src="https://img.icons8.com/color/48/000000/twitter--v1.png"/>&lt;/a>
+                                    &lt;/div>
+                                    &lt;p class="or">&lt;span>or&lt;/span>&lt;/p>
+                                    &lt;div class="name-input-box">
+                                        &lt;div class="input-with-icon ">
+                                            &lt;i class="icon user-icon size-xs far fa-user">&lt;/i>
+                                            &lt;input type="text" placeholder="First Name" class="input firstname-input" required>
+                                        &lt;/div>
+                                        &lt;div class="input-with-icon">
+                                            &lt;i class="icon user-icon size-xs far fa-user">&lt;/i>
+                                            &lt;input type="text" placeholder="Last Name" class="input lastname-input" required>
+                                        &lt;/div>
+                                    &lt;/div>
+                                    &lt;div class="input-with-icon">
+                                        &lt;i class="icon email-icon size-xs far fa-envelope">&lt;/i>
+                                        &lt;input type="email" placeholder="Email" class="input email-input" required >
+                                    &lt;/div>
+                                    &lt;div class="input-with-icon password-box">
+                                        &lt;i class="icon fas fa-key">&lt;/i>
+                                        &lt;input type="password" placeholder=" Password" class="input see-password-input">
+                                        &lt;a href="#" class="password-control ">&lt;/a>
+                                    &lt;/div>
+                                    &lt;div class="input-with-icon  active-inp">
+                                        &lt;i class="icon fas fa-key">&lt;/i>
+                                        &lt;input type="password" placeholder="Confirm Password" class="input password-input">
+                                    &lt;/div>  
+                                    &lt;a href="#" class="signup-btn btn btn-md  link">Sign Up&lt;/a>
+                                    &lt;div class="login-way">
+                                        &lt;span class="account-yes" >Already have an Account?&lt;/span>
+                                        &lt;a href="#" id="try-login">Sign In&lt;/a>
+                                    &lt;/div>
+                                &lt;/form>
+                            &lt;/div></code>
                         </pre>
                     </section>
                 </section>

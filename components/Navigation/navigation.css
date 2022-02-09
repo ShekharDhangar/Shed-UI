@@ -176,7 +176,7 @@
 .title-container{
     margin: 2rem 0rem;
 }
-.title{
+.title-container .title{
     color: var(--secondary-clr);
     font-size: 3.75rem;
     font-family: 'Bitter', serif;

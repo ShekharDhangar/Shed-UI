@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/e5dbe6b99b.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="/components/Cards/card.css">
+    <link rel="stylesheet" href="/components/Cards/card-media.css">
 </head>
 <body>
     <section class="container">
@@ -31,32 +32,44 @@
     </section>
 
     <section class="container">
-        <div class="vertical-card">
-            <div class="my-badge">You Save 80%</div>
-            <div class="card-header card-img">
-                <img src="https://rb.gy/csnlne" alt="product image of boat headphone">
-        </div>
-        <div class="card-content">
-            <div class="rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+        <div class="product-card-container">
+            <div class="flex w-100 relative product-card">
+              <div class="w-100 h-100 relative product-header">
+                      <div class="flex wishlist-badge"><i class="icon sidze-xs fa-regular fa-heart"></i></div>
+                <div class="w-100 relative product-img-container">
+                  <img class="w-100 h-100 absolute inset"
+                    src="https://images.bewakoof.com/t320/orchid-petal-basic-hoodies-454624-1640779904-1.jpg"
+                    alt="product image of boat headphone"
+                  />
+                </div>
+                <div class="btn-container hover-cart-btn-container  ">
+                    <button class="w-100 btn btn-sm flex cart-btn">Add To Cart</button>
+                </div>
+              </div>
+              <div class="w-100 product-content">
+                <span class="product-title lt-bold">Roadster</span>
+                <div class="product-description lt-bold">
+                  Red Plum layered sweatshirt Hoodie
+                </div>
+                <div class="ratings">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                </div>
+                <div class="relative flex product-price-details">
+                  <span class="product-price">₹799</span>
+                  <span class="strike-txt og-price txt-grey">₹1499</span>
+                </div>
+              </div>
+              <div class="w-100 product-footer">
+                  <div class=" btn-container mobile-cart-btn-container w-100">
+                      <button class=" btn btn-xs cart-btn w-100 ">Add to Cart</button>
+                  </div>
+              </div>
             </div>
-            <div class="card-description">
-                <div class="title">boAt Rockerz 550</div>
-                <span class="price" >Rs. 1,999.00</span>
-            </div>
-            <div class="card-clr-variant">
-                <li class="bg-primary" ></li>
-                <li class="bg-black"></li>
-                <li class="bg-red" ></li>
-                <li class="bg-teal" ></li>
-            </div>
-            <button class="btn btn-sm">Add to Cart</button>
-        </div>
-</div>
+          </div> 
     </section>
 <section class="container">
     <div class="horizontal-card">
