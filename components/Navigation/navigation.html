@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation</title>
+    <link rel="stylesheet" href="../Navigation/navigation.css" />
+    <link
+      rel="stylesheet"
+      href="/components/Navigation/navigation-media-query.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/e5dbe6b99b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+  <main>
+    <header>
+      <section class="flex nav-section ">
+        <div class="logo-container">
+          <a id="btnHamburger" href="#" class="header-toggle menu-btn icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <a href="#" class="logo">shed</a>
+        </div>
+        <nav class="width-full height-full navbar">
+          <ul class="list-none flex nav-link-container">
+            <div class="nav-content">
+              <a class="nav-link" href="#">MEN</a>
+            </div>
+            <div class="nav-content">
+              <a class="nav-link" href="b#">WOMEN</a>
+            </div>
+            <div class="nav-content">
+              <a href="#" class="nav-link">KIDS</a>
+            </div>
+          </ul>
+          <div class="flex nav-icon-container">
+            <div class="flex search-container">
+              <input class="search-input" type="text" placeholder="Search..." />
+              <a class="search-btn" href="#"
+                ><i class="fa fa-search" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="flex pointer profile-box icon-container">
+              <a href="/authentication/login.html">
+                <i class="icon user-icon far fa-user"></i>
+              </a>
+              <span class="icon-txt">Profile</span>
+            </div>
+            <div class="flex pointer icon-container">
+              <i class="icon wishlist-icon far fa-heart"></i>
+              <span class="icon-txt">Wishlist</span>
+            </div>
+            <div class="flex pointer icon-container">
+              <i class="icon cart-icon fas fa-shopping-bag"></i>
+              <span class="icon-txt">Bag</span>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <aside class="side-overlay" >
+        <section class="sidebar">
+            <div class="sidebar-header">
+                <div class="close-sidebar flex">
+                    <i class="icon fas fa-times"></i>
+                </div>
+                <div class="welcome-header bold">
+                    <span>Welcome</span>
+                  </div>
+                  <div class="txt-grey register ><a href="#">Login/Sign Up</a></div>
+              </div>
+              <div class="divider">"</div>
+              <div class="menu-content">
+                  <div class="menu-list-wrap">
+                      <ul class="menu-list list-none ">
+                    <div class="menu-head"><span class="txt-grey ">SHOP IN</span></div>
+                <li><a href="#" class="link-name">Men</a></li>
+                </ul>
+                </div>
+                <div class="menu-list-wrap bg-grey">
+                    <ul class="menu-list list-none  ">
+                      <div class="menu-head"><span class="txt-grey ">CONTACT US</span></div>
+                        <li><a href="#" class="link-name">Help & Support</a></li>
+                    </ul>
+                </div>
+                <div class="menu-list-wrap bg-grey">
+                  <ul class="menu-list list-none  ">
+                    <div class="menu-head"><span class="txt-grey ">ABOUT US</span></div>
+                      <li><a href="#" class="link-name">Our Story</a></li>
+                  </ul>
+              </div>
+            </div>
+        </section>
+    </aside>
+</main>
+  </body>
+  <script src="./navigation.js"></script>
+</html>

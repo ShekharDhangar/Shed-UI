@@ -43,6 +43,7 @@
                         <li class="list-none component-item"><a href="#text-component" class="btn btn-xs simple-link" >Text</a></li>
                         <li class="list-none component-item"><a href="#list-component" class="btn btn-xs simple-link" >List</a></li>
                         <li class="list-none component-item"><a href="#navigation-component" class="btn btn-xs simple-link" >Navigation</a></li>
+                        <li class="list-none component-item"><a href="#hamburger-component" class="btn btn-xs simple-link" >Hamburger</a></li>
             </div>
 </div>
             <section class="demo-container action">
@@ -1166,22 +1167,125 @@
                 </section>
             </section>
             <br>
-            <section>
+            <section id="navigation-component">
                 <div class="title-container">
-                    <span class="component-name"></span>
+                    <span class="component-name">Navigation</span>
                     <span class="sub-component-name"></span>
                 </div>
                 <section class="container">
+                    <p class="comp-description">Please click <a class="btn-xs link" href="../components/Navigation/navigation.html">HERE</a> for view of naviagtion.</p>
                 </section>
                 <section class="code-container">
                     <pre class="code-demo">
-                        <code class="html">
-                            
+                        <code class="html">&lt;section class="flex nav-section ">
+                                &lt;div class="logo-container">
+                                  &lt;a id="btnHamburger" href="#" class="header-toggle menu-btn icon">
+                                    &lt;span>&lt;/span>
+                                    &lt;span>&lt;/span>
+                                    &lt;span>&lt;/span>
+                                  &lt;/a>
+                                  &lt;a href="#" class="logo">shed&lt;/a>
+                                &lt;/div>
+                                &lt;nav class="width-full height-full navbar">
+                                  &lt;ul class="list-none flex nav-link-container">
+                                    &lt;div class="nav-content">
+                                      &lt;a class="nav-link" href="#">MEN&lt;/a>
+                                    &lt;/div>
+                                    &lt;div class="nav-content">
+                                      &lt;a class="nav-link" href="b#">WOMEN&lt;/a>
+                                    &lt;/div>
+                                    &lt;div class="nav-content">
+                                      &lt;a href="#" class="nav-link">KIDS&lt;/a>
+                                    &lt;/div>
+                                  &lt;/ul>
+                                  &lt;div class="flex nav-icon-container">
+                                    &lt;div class="flex search-container">
+                                      &lt;input class="search-input" type="text" placeholder="Search..." />
+                                      &lt;a class="search-btn" href="#"
+                                        >&lt;i class="fa fa-search" aria-hidden="true">&lt;/i>
+                                      &lt;/a>
+                                    &lt;/div>
+                                    &lt;div class="flex pointer profile-box icon-container">
+                                      &lt;a href="/authentication/login.html">
+                                        &lt;i class="icon user-icon far fa-user">&lt;/i>
+                                      &lt;/a>
+                                      &lt;span class="icon-txt">Profile&lt;/span>
+                                    &lt;/div>
+                                    &lt;div class="flex pointer icon-container">
+                                      &lt;i class="icon wishlist-icon far fa-heart">&lt;/i>
+                                      &lt;span class="icon-txt">Wishlist&lt;/span>
+                                    &lt;/div>
+                                    &lt;div class="flex pointer icon-container">
+                                      &lt;i class="icon cart-icon fas fa-shopping-bag">&lt;/i>
+                                      &lt;span class="icon-txt">Bag&lt;/span>
+                                    &lt;/div>
+                                  &lt;/div>
+                                &lt;/nav>
+                              &lt;/section>
                         </code>
                     </pre>
                 </section>
             </section>
             <br>
+            
+            <section id="hamburger-component">
+                <div class="title-container">
+                    <span class="component-name">Navigation</span>
+                    <span class="sub-component-name">Hamburger-SideBar</span>
+                </div>
+                <section class="container">
+                    <p class="comp-description">Please click <a class="btn-xs link" href="../components/Navigation/navigation.html">HERE</a> and decrease view-port/screen-size(if on desktop/laptop) for Hamburger Sidebar Experience.</p>
+                    <p class="comp-description">Please note: The code for Hamburger Menu is also present in above Navigation Component. For your reference, I have added the same code below.</p>
+                </section>
+                <section class="code-container">
+                    <pre class="code-demo">
+                        <code class="html">&lt;!-- Hamburger Code -->
+                            &lt;a id="btnHamburger" href="#" class="header-toggle menu-btn icon">
+                                &lt;span>&lt;/span>
+                                &lt;span>&lt;/span>
+                                &lt;span>&lt;/span>
+                              &lt;/a>
+                              &lt;!-- SideBar code -->
+                            &lt;aside class="side-overlay" >
+                                &lt;section class="sidebar">
+                                    &lt;div class="sidebar-header">
+                                        &lt;div class="close-sidebar flex">
+                                            &lt;i class="icon fas fa-times">&lt;/i>
+                                        &lt;/div>
+                                        &lt;div class="welcome-header bold">
+                                            &lt;span>Welcome&lt;/span>
+                                          &lt;/div>
+                                          &lt;div class="txt-grey register >&lt;a href="#">Login/Sign Up&lt;/a>&lt;/div>
+                                      &lt;/div>
+                                      &lt;div class="divider">"&lt;/div>
+                                      &lt;div class="menu-content">
+                                          &lt;div class="menu-list-wrap">
+                                              &lt;ul class="menu-list list-none ">
+                                            &lt;div class="menu-head">&lt;span class="txt-grey ">SHOP IN&lt;/span>&lt;/div>
+                                        &lt;li>&lt;a href="#" class="link-name">Men&lt;/a>&lt;/li>
+                                        &lt;/ul>
+                                        &lt;/div>
+                                        &lt;div class="menu-list-wrap bg-grey">
+                                            &lt;ul class="menu-list list-none  ">
+                                              &lt;div class="menu-head">&lt;span class="txt-grey ">CONTACT US&lt;/span>&lt;/div>
+                                                &lt;li>&lt;a href="#" class="link-name">Help & Support&lt;/a>&lt;/li>
+                                            &lt;/ul>
+                                        &lt;/div>
+                                        &lt;div class="menu-list-wrap bg-grey">
+                                          &lt;ul class="menu-list list-none  ">
+                                            &lt;div class="menu-head">&lt;span class="txt-grey ">ABOUT US&lt;/span>&lt;/div>
+                                              &lt;li>&lt;a href="#" class="link-name">Our Story&lt;/a>&lt;/li>
+                                          &lt;/ul>
+                                      &lt;/div>
+                                    &lt;/div>
+                                &lt;/section>
+                            &lt;/aside>
+                        </code>
+                    </pre>
+                </section>
+            </section>
+            <br>
+
 <!-- Clsoing tag of doc-section-->
     </section>
 </body>

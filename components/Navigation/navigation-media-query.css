@@ -1,0 +1,113 @@
+
+@media only screen and (max-width: 1000px) {
+    .title{
+        font-size: 3.25rem;
+    }
+    .logo-container .logo{
+        font-size: 4rem;
+    }
+  }
+  @media only screen and (max-width: 850px) {
+      .search-container{
+          width: 0;
+          border:none;
+      }
+      .search-container:hover{
+          width: 100%;
+          border: 2px solid var(--clr-black);
+      }
+      .nav-link-container{
+          display: none;
+      }
+      .logo-container{
+          padding-inline-start:6.25rem;
+      }
+      .header-toggle > span {
+          display: block;
+          width: 26px;
+          height: 2px;
+          background-color: var(--primary-clr);
+          transition: all 300ms ease-in-out;
+          transform-origin: 3px 1px;
+      }
+      .header-toggle :not(:last-child) {
+          margin-bottom: 5px;
+      }
+      .header-toggle.open > span:first-child {
+          transform: rotate(45deg);
+      }
+      .header-toggle.open > span:nth-child(2) {
+          opacity: 0;
+      }
+      .header-toggle.open > span:last-child {
+          transform: rotate(-45deg);
+      }
+  }
+  @media only screen and (max-width: 768px) { 
+      
+      .footer-container{
+         justify-items: flex-start;
+      }
+      .menu-list > li{  
+        line-height: 4.5rem;
+   }
+  }
+  @media only screen and (max-width: 610px) {
+      .sidebar{
+          min-width: 50vw;
+      }
+    .header-toggle > span {
+        width:22px;
+        height:1.85px;
+      }
+      .nav-icon-container .profile-box{
+          display: none;
+      }
+    .nav-icon-container .icon-container .icon{
+        width:2.25rem;
+        height: 2.25rem;
+    }
+    .nav-icon-container .icon-container .icon-txt{
+        display: none;
+    }
+  .search-container,
+  .search-container .search-btn{
+      top: 0.35rem;
+  }
+  
+  .nav-icon-container .icon-container {
+      flex-direction: column;
+      height: 100%;
+      margin-inline: 1.25rem;
+  }
+  
+    .nav-icon-container .icon-container{
+        margin-inline: 8.5px;
+    }
+    .logo-container .logo{
+        font-size: 3.5rem;
+    }
+   .title{
+        font-size: 2.75rem;
+    }
+  }
+  
+  @media only screen and (max-width: 355px) {
+    .nav-icon-container .icon-container .icon{
+        width:2rem;
+        height: 2rem;
+    }
+    .nav-icon-container .icon-container {
+        margin: 5px;
+    }
+   .logo-container {
+       width: max-content;
+       padding-inline-start: 4.5rem;
+    }
+    .logo-container .logo{
+       font-size: 3rem;
+   }
+   .title{
+    font-size: 2.25rem;
+    }
+  }
