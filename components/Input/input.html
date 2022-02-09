@@ -4,28 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input</title>
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e5dbe6b99b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/components/Input/input.css">
 </head>
 <body>
-    <section class="container">
-        <form action="">
-            <div class="input-container validate ">
-                <input type="text" class="input success" placeholder="Username" required >
-                <div class="validation-style">
-                    <img class="icon" src="/Assets/success.png" alt="input success icon">
-                    <span class="success-txt" >Username is available</span>
+        <div class="flex form-container">
+            <form action="login form register" id="login" class="login-form">
+                <h2 class="form-title txt-center h2">Sign in</h2>
+                <div class="input-box">
+                <div class="input-with-icon">
+                    <i class="icon size-xs far fa-user "></i>
+                    <input type="text"
+                    id = "check-email-inp" placeholder="Email" class="input email-input" required>
                 </div>
-            </div>
-            <div class="input-container validate">
-                <input type="password" class="input error" placeholder="Password" required >
-                <div class="validation-style">
-                    <img class="icon" src="/Assets/error.png" alt="input error icon">
-                    <span class="error-txt" >Password is incorrect</span>
+                    <div class="flex validation-style">
+                        <img class="icon size-xs" src="/assets/warning.png" alt="">
+                        <span class="msg-txt error-txt lt-bold">
+                            Please enter correct email</div>
+                        </span>
+                    </div>
+                    <div class="input-box">
+                        <div class="input-with-icon">
+                            <i class="icon fas fa-key"></i>
+                            <input type="password" placeholder="Password" 
+                            id = "check-password-inp"
+                            class="input password-input">
+                        </div>
+                        <div class="flex validation-style">
+                            <img class="icon size-xs" src="/assets/warning.png" alt="">
+                            <span class="error-txt lt-bold">
+                                Please enter correct Password</div>
+                            </span>
+                        </div>
+                
+                <div class="flex remember-forgot-grp">
+                    <div class="flex remember-box">
+                        <input type="checkbox" id="yes" name="bydefault" value="yes" class="form-checkbox pointer">
+                        <label for="yes" class="lt-bold txt-xs">Remember me</label>
+                    </div>
+                    <a href="#" class="login-forgot txt-sm txt-grey">Forgot password?</a>
                 </div>
+                <button href="#" type="submit" class="btn btn-md link login-btn">Sign in</button>
+
+                <div class="signup-way">
+                    <span class="account-no">Don't have an Account?</span>
+                    <a id="try-signup" href="#">Create one</a>
                 </div>
-            <textarea class="txt-area" role="textbox" placeholder="Write a Message" required ></textarea>
-        </form>
-    </section>
+            </form>
+            <form action="sign-up form register" id="sign-up" class="signup-form none">
+                <h2 class="form-title txt-center h2 ">Create Account</h2>
+                <div class="flex-container social-login">
+                    <a href="#"><img  class="icon size-xs" src="https://img.icons8.com/color/48/000000/google-logo.png"/></a>
+                    <a href="#"><img class="icon size-xs" src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/></a>
+                    <a href="#"><img class="icon size-xs" src="https://img.icons8.com/color/48/000000/twitter--v1.png"/></a>
+                </div>
+                <p class="or"><span>or</span></p>
+                <div class="name-input-box">
+                    <div class="input-with-icon ">
+                        <i class="icon user-icon size-xs far fa-user"></i>
+                        <input type="text" placeholder="First Name" class="input firstname-input" required>
+                    </div>
+                    <div class="input-with-icon">
+                        <i class="icon user-icon size-xs far fa-user"></i>
+                        <input type="text" placeholder="Last Name" class="input lastname-input" required>
+                    </div>
+                </div>
+                <div class="input-with-icon">
+                    <i class="icon email-icon size-xs far fa-envelope"></i>
+                    <input type="email" placeholder="Email" class="input email-input" required >
+                </div>
+                <div class="input-with-icon password-box">
+                    <i class="icon fas fa-key"></i>
+                    <input type="password" placeholder=" Password" class="input see-password-input">
+                    <a href="#" class="password-control "></a>
+                </div>
+                <div class="input-with-icon  active-inp">
+                    <i class="icon fas fa-key"></i>
+                    <input type="password" placeholder="Confirm Password" class="input password-input">
+                </div>  
+                <a href="#" class="signup-btn btn btn-md  link">Sign Up</a>
+                <div class="login-way">
+                    <span class="account-yes" >Already have an Account?</span>
+                    <a href="#" id="try-login">Sign In</a>
+                </div>
+            </form>
+        </div>
 </body>
+<script src="/components/Input/input.js"></script>
 </html>
