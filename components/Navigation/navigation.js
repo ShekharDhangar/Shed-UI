@@ -2,7 +2,6 @@ const menuIcon = document.querySelector('.menu-btn');
 menuIcon.addEventListener('click', menuHandler);
 const sideBar = document.querySelector('.side-overlay');
 function menuHandler() {
-    console.log('clcikd')
     sideBar.classList.add('open');
     menuIcon.classList.remove('open');
 }
