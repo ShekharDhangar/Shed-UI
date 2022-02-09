@@ -54,7 +54,7 @@
   }
   @media only screen and (max-width: 610px) {
       .sidebar{
-          min-width: 50vw !important;
+          min-width: 50vw;
       }
     .header-toggle > span {
         width:22px;
