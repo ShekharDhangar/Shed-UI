@@ -201,7 +201,7 @@ span{
 
 /* PRODUCT */
 .product-card-container{
-    width: 30rem !important;
+    width: 30rem;
     padding-inline: 1.5rem;
 }
 .product-card{
