@@ -1,0 +1,56 @@
+@import url('/utils.css');
+.grid-container{
+    display: grid;
+    padding: 1rem;
+    border: 1px solid black;
+    grid-gap:5px;
+    max-width: 100rem;
+    margin: auto;
+    place-content: center;
+}
+.grid-container.box-1{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid-item{
+    font-size: 2rem;
+    text-align: center;
+    background-color: var(--clr-skyblue);
+    border: 5px solid var(--clr-black);
+}
+.item-1{
+    background-color: var(--secondary-clr);
+}
+.item-2{
+    background-color: var(--secondary-clr);
+}
+.item-3{
+    background-color: var(--secondary-clr);
+
+}
+.item-4{
+    background-color: var(--secondary-clr);
+}
+
+.grid-container.box-2{
+    grid-template-columns: repeat(3,1fr);
+}
+.grid-container.box-2 .item{
+    border: 5px solid black;
+    font-size: 1.35rem;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    height: 5rem;
+}  
+  .content-1 {
+    background-color: var(--secondary-clr);
+  }
+  
+  .content-2 {
+    background-color: var(--secondary-clr);
+  }
+  
+  .content-3 {
+    background-color: var(--secondary-clr);
+  }
