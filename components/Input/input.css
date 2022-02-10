@@ -1,4 +1,3 @@
-@import url(/components/Input/input-media-query.css);
 @import url(/component.css);
 
 
@@ -28,6 +27,9 @@
 }
 .input-box{
     display: grid;    
+}
+.input-box .input{
+    width: 100%;
 }
 .input-box > .validation-style{
     height: min-content;

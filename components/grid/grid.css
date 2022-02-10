@@ -3,11 +3,13 @@
     display: grid;
     padding: 1rem;
     border: 1px solid black;
-    grid-template-columns: repeat(2,1fr);
     grid-gap:5px;
     max-width: 100rem;
     margin: auto;
     place-content: center;
+}
+.grid-container.box1{
+    grid-template-columns: repeat(2,1fr);
 }
 
 .grid-item{
