@@ -202,7 +202,7 @@ span{
 /* PRODUCT */
 .product-card-container{
     width: 30rem;
-    padding-inline: 1.5rem;
+    padding-inline: 7.5px;
 }
 .product-card{
     background-color: var(--clr-white);

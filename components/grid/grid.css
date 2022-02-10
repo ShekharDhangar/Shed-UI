@@ -8,7 +8,7 @@
     margin: auto;
     place-content: center;
 }
-.grid-container.box1{
+.grid-container.box-1{
     grid-template-columns: repeat(2,1fr);
 }
 
@@ -19,16 +19,17 @@
     border: 5px solid var(--clr-black);
 }
 .item-1{
-    background-color:rgb(196, 67, 50);
+    background-color: var(--secondary-clr);
 }
 .item-2{
-    background-color: rgb(27, 169, 226); 
+    background-color: var(--secondary-clr);
 }
 .item-3{
-    background-color: rgb(15, 160, 104);
+    background-color: var(--secondary-clr);
+
 }
 .item-4{
-    background-color: rgba(22, 65, 207, 0.658);
+    background-color: var(--secondary-clr);
 }
 
 .grid-container.box-2{
@@ -43,13 +44,13 @@
     height: 5rem;
 }  
   .content-1 {
-    background-color: var(--clr-teal);
+    background-color: var(--secondary-clr);
   }
   
   .content-2 {
-    background-color: var(--success-clr);
+    background-color: var(--secondary-clr);
   }
   
   .content-3 {
-    background-color: #1EAAFC;
+    background-color: var(--secondary-clr);
   }
