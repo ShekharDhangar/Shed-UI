@@ -72,40 +72,34 @@
     height: 3.5rem;
     min-width: 3.5rem;
     max-width: max-content;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding: 1.5rem;
 }
 
 .btn-sm{
     font-size: 2rem;
     max-width: max-content;
     height: 4rem;
-    padding-left: 1.55rem;
-    padding-right: 1.55rem;
+    padding: 2rem;
 }
 
 .btn-md{
     font-size: 2.5rem;
     max-width: max-content;
     height: 4.5rem;
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
+    padding: 2.25rem;
 }
 
 .btn-lg{
     font-size: 3rem;
     max-width: max-content;
-    height: 5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    height: 4.5rem;
+    padding: 2.55rem;
 }
 
 .btn-xl{
-    font-size: 4rem;
-    height: 6rem;
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
-    max-width: max-content;
+    font-size: 3.25rem;
+    padding:3rem;
+    max-width: 100%;
 }
 
 .link{

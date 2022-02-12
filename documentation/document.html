@@ -459,7 +459,7 @@
                 </div>
 
                 <section class="container">
-                    <div class="card-container">
+                    <div class="relative card-container">
                         <div class="card-header flex">
                             <span>Mar 25,2022</span>
                             <a class="link flex btn-xs" href="#">Design</a>
@@ -471,7 +471,7 @@
                         <div class="card-footer flex">
                             <button class="btn btn-xs">Read More</button>
                             <div class="card-author-box flex">
-                                <img class="avatar-circle size-xs"  src="https://rb.gy/fjwtsq" alt="">
+                                <img class="avatar-circle size-xs"  src="https://rb.gy/fjwtsq" alt="avatar of Wes Bos">
                                 <span>Wes Bos</span>
                             </div>
                         </div>
@@ -480,22 +480,22 @@
 
                 <section class="code-container">
                     <pre class="code-demo">
-                        <code class="html">&lt;div class="card-container">
-                                &nbsp;&lt;div class="card-header flex">
-                                &nbsp;&nbsp;&lt;span>Mar 25,2022&lt;/span>
-                                &nbsp;&nbsp;&lt;a class="link flex btn-xs" href="#">Design&lt;/a>
-                                &nbsp;&lt;/div>
-                                &nbsp;&lt;div class="card-content">
-                                &nbsp;&nbsp;&lt;h1 class="title">..text..&lt;/h1>
-                                &nbsp;&nbsp;&lt;p class="card-description" >..text..&lt;/p>
-                                &nbsp;&lt;/div>
-                                &nbsp;&lt;div class="card-footer flex">
-                                &nbsp;&nbsp;&lt;button class="btn btn-xs">Read More&lt;/button>
-                                &nbsp;&nbsp;&nbsp;&lt;div class="card-author-box flex">
-                                &nbsp;&nbsp;&nbsp;&lt;img class="avatar-circle size-xs"  src="https://rb.gy/fjwtsq" alt="Avatar of Wesbos">
-                                &nbsp;&nbsp;&nbsp;&lt;span>Wes Bos&lt;/span>
-                                &nbsp;&nbsp;&lt;/div>
-                                &nbsp;&lt;/div>
+                        <code class="html">&lt;div class="relative card-container">
+                            &lt;div class="card-header flex">
+                                &lt;span>Mar 25,2022&lt;/span>
+                                &lt;a class="link flex btn-xs" href="#">Design&lt;/a>
+                            &lt;/div>
+                            &lt;div class="card-content">
+                                &lt;h1 class="title">Accessibility tools for designers and developers&lt;/h1>
+                                &lt;p class="card-description" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia nostrum quis blanditiis at excepturi veritatis laborum cupiditate et aliquid molestiae?&lt;/p>
+                            &lt;/div>
+                            &lt;div class="card-footer flex">
+                                &lt;button class="btn btn-xs">Read More&lt;/button>
+                                &lt;div class="card-author-box flex">
+                                    &lt;img class="avatar-circle size-xs"  src="https://rb.gy/fjwtsq" alt="avatar of Wes Bos">
+                                    &lt;span>Wes Bos&lt;/span>
+                                &lt;/div>
+                            &lt;/div>
                         &lt;/div></code>
                     </pre>
                 </section>
@@ -605,7 +605,7 @@
 
                     <section class="container">
                         <div class="horizontal-card">
-                            <div class="card-header">
+                            <div class="flex card-header">
                                 <img class="" src="https://rb.gy/ykbitg" alt="Iphone 13 Image">
                             </div>
                             <div class="card-content">
@@ -639,7 +639,7 @@
                     <section class="code-container">
                         <pre class="code-demo">
                             <code class="html">&lt;div class="horizontal-card">
-                                &lt;div class="card-header">
+                                &lt;div class="flex card-header">
                                     &lt;img class="" src="https://rb.gy/ykbitg" alt="Iphone 13 Image">
                                 &lt;/div>
                                 &lt;div class="card-content">
@@ -681,7 +681,7 @@
                     </div>
 
                     <section class="container">
-                        <div class="card-container dismiss-card">
+                        <div class="relative card-container dismiss-card">
                             <div class="card-header">
                                 <div class="title">
                                     Welcome to Dribble 
@@ -700,7 +700,7 @@
                                 <i class="icon avatar-circle fab fa-google"></i>
                             </a>
                         </div>
-                            <button class="close-icon flex">
+                            <button class="pointer absolute close-icon flex">
                                 <i class="icon fas fa-times"></i>
                             </button> 
                     </div>
@@ -708,7 +708,7 @@
 
                     <section class="code-container">
                         <pre class="code-demo">
-                            <code class="html">&lt;div class="card-container dismiss-card">
+                            <code class="html">&lt;div class="relative card-container dismiss-card">
                                 &lt;div class="card-header">
                                     &lt;div class="title">Welcome to Dribble&lt;/div>
                             &lt;/div>
@@ -719,7 +719,7 @@
                                 &lt;button class="btn btn-xs">Sign up with email&lt;/button>
                                 &lt;a href="#">&lt;i class="icon avatar-circle fab fa-google">&lt;/i>&lt;/a>
                             &lt;/div>
-                                &lt;button class="close-icon flex">&lt;i class="icon fas fa-times">&lt;/i>&lt;/button> 
+                                &lt;button class="pointer absolute close-icon flex">&lt;i class="icon fas fa-times">&lt;/i>&lt;/button> 
                         &lt;/div></code>
                         </pre>
                     </section>
@@ -735,11 +735,11 @@
                     </div>
 
                     <section class="container">
-                        <div class=" card-overlay">
+                        <div class="p-0 overflow-hidden relative card-overlay">
                             <div class="img-overlay">
                                 <img src="/Assets/nature.jpg" alt="nature image">
                             </div>
-                            <div class="card-overlay-content">
+                            <div class="p-1 card-overlay-content">
                                 <h1 class="title" >Bologna</h1>
                                 <span>Romagna,Italy</span>
                                 <p class="card-description" >It is seventh most populous city in Italy, at the heart of a metroplitan area of about one million people.</p>
@@ -749,14 +749,14 @@
 
                     <section class="code-container">
                         <pre class="code-demo">
-                            <code class="html">&lt;div class=" card-overlay">
+                            <code class="html">&lt;div class="p-0 overflow-hidden relative card-overlay">
                                 &lt;div class="img-overlay">
                                     &lt;img src="/Assets/nature.jpg" alt="nature image">
                                 &lt;/div>
-                                &lt;div class="card-overlay-content">
+                                &lt;div class="p-1 card-overlay-content">
                                     &lt;h1 class="title" >Bologna&lt;/h1>
                                     &lt;span>Romagna,Italy&lt;/span>
-                                    &lt;p class="card-description" >..text..&lt;/p>
+                                    &lt;p class="card-description" >It is seventh most populous city in Italy, at the heart of a metroplitan area of about one million people.&lt;/p>
                                 &lt;/div>
                             &lt;/div></code>
                         </pre>
@@ -773,7 +773,7 @@
                     </div>
 
                     <section class="container">
-                        <div class="card-container text-card">
+                        <div class="relative card-container text-card">
                             <div class="card-content">
                                 <h1 class="title" >AP Psychology - Course :
                                 </h1>
@@ -787,7 +787,7 @@
 
                     <section class="code-container">
                         <pre class="code-demo">
-                            <code class="html">&lt;div class="card-container text-card">
+                            <code class="html">&lt;div class="relative card-container text-card">
                                 &lt;div class="card-content">
                                     &lt;h1 class="title" >AP Psychology - Course : &lt;/h1>
                                     &lt;p class="card-description" >..text..&lt;/p>

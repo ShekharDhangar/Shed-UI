@@ -2,19 +2,19 @@
 :root{
     --primary-clr:#05386b;
     --secondary-clr:#04478a;
-    --danger-clr: #FF0000;
-    --warning-clr:rgb(234 233 12);
-    --success-clr:#0ebf28;
+    --danger-clr: #ed3535;
+    --warning-clr:#c1c1c0;
+    --success-clr:#26a338;
     --info-clr:#1C6DD0;
     --clr-blue:#2b6cb0;
     --clr-grey:#646464cf;
     --clr-teal:#12b2b3;    
-    --clr-black:#000;
+    --clr-black:#0c0b0bde;
     --clr-white:#fff;
     --clr-lightgrey:#edf2f7;
     --clr-grey-100:#edf2f785;
     --clr-yellow:#FFC600;
-    --clr-darkblue:rgb(1, 22, 39);
+    --clr-darkblue:#011627;
     --clr-maroon:#B12704;
     --clr-purple:#9A0680;
     --clr-skyBlue:#1597BB;
@@ -43,7 +43,7 @@
     margin: 1rem auto;
     max-width: 100rem;
 }
-
+/* Margin */
 .m-0{
     margin: 0;
 }
@@ -93,9 +93,11 @@
 .p-5{
     padding: 5rem;
 }
+/* grid */
 .grid{
     display: grid;
 }
+/* flex */
 .flex{
     display: flex;
     justify-content: center;
@@ -107,9 +109,17 @@
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+    gap: 1rem;
+}
+.grid{
+    display: grid;
+    place-items: center;
 }
 .hidden{
     visibility: hidden;
+}
+img{
+    object-fit: cover;
 }
 
 .bg-black{
@@ -241,4 +251,7 @@ button{
 }
 .flex-column{
     flex-direction: column;
+}
+.overflow-hidden{
+    overflow: hidden;
 }
