@@ -255,3 +255,6 @@ button{
 .overflow-hidden{
     overflow: hidden;
 }
+.inset{
+    inset: 0;
+}
