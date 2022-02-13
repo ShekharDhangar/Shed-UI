@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODAL</title>
+    <script src="https://kit.fontawesome.com/e5dbe6b99b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./modal.css">
+</head>
+<body>
+    <section class="container">
+        <a href="#modal-box">
+            <button class="btn btn-sm">Open Modal</button>
+        </a>
+    </section>
+    
+    <section>
+        <div id="modal-box" class="flex modal absolute inset">
+        <form action="" class="forgot-password-form">
+        <div class="relative forgot-password-card">
+            <div class="flex card-header"><span class="heading txt-md lt-bold">Reset password</span></div>
+            <div class="card-content">
+                <p class="card-description txt-sm">Enter your email address and we will send you a link to reset your password.</p>
+                <div class="input-box">
+                    <div class="input-with-icon">
+                        <i class="icon email-icon size-xs far fa-envelope"></i>
+                        <input type="email" placeholder="Email" class="input email-input" required >
+                    </div>
+            </div>
+            <button href="#" type="submit" class="btn btn-md link reset-btn">Send reset link</button>
+        </div>
+        <a href="#" class="modal-close">&times;</a>
+        </form>
+</div>
+    </section>
+</body>
+</html>

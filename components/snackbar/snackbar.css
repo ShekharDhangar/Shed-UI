@@ -1,0 +1,42 @@
+@import url(/component.css);
+@import url(/utils.css);
+.snackbar{
+    background-color: var(--primary-clr);
+    max-width: max-content;
+    color: var(--clr-white);
+    padding: 5px 1rem;
+    font-weight: 600;
+    margin: 5px 0;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    visibility: hidden;
+}
+.snackbar > span{
+    font-size: 1.75rem;
+}
+
+.success-snackbar{
+    background-color: var(--success-clr);
+}
+.danger-snackbar{
+    background-color: var(--danger-clr);
+}
+.info-snackbar{
+    background-color: var(--info-clr);
+}
+.snackbar.show{
+    visibility: visible;
+    animation: fadein 0.75s, fadeout 0.75s 2.5s;
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}

@@ -45,6 +45,10 @@
                         <li class="list-none component-item"><a href="#navigation-component" class="btn btn-xs simple-link" >Navigation</a></li>
                         <li class="list-none component-item"><a href="#hamburger-component" class="btn btn-xs simple-link" >Hamburger</a></li>
                         <li class="list-none component-item"><a href="#grid-component" class="btn btn-xs simple-link" >Grid</a></li>
+                        <li class="list-none component-item"><a href="#modal-component" class="btn btn-xs simple-link" >Modal</a></li>
+                        <li class="list-none component-item"><a href="#slider-component" class="btn btn-xs simple-link" >Slider</a></li>
+                        <li class="list-none component-item"><a href="#snackbar-component" class="btn btn-xs simple-link" >Snackbar</a></li>
+                        <li class="list-none component-item"><a href="#loader-component" class="btn btn-xs simple-link" >Loader</a></li>
             </div>
 </div>
             <section class="demo-container action">
@@ -1469,7 +1473,7 @@
                     </section>
                     <section class="code-container">
                         <pre class="code-demo">
-                            <code>&lt;div class="grid-container w-100 box-1">
+                            <code class="html">&lt;div class="grid-container w-100 box-1">
                                     &lt;div class="grid-item item-1">1&lt;/div>
                                     &lt;div class="grid-item item-2">2&lt;/div>
                                     &lt;div class="grid-item item-3">3&lt;/div>
@@ -1493,13 +1497,149 @@
                             </section>
                             <section class="code-container">
                                 <pre class="code-demo">
-                                    <code>&lt;div class="grid-container w-100 box-2">            
+                                    <code class="html" >&lt;div class="grid-container w-100 box-2">            
                                         &lt;div class="item content-1">Content-1&lt;/div>
                                         &lt;div class="item content-2">Content-2&lt;/div>
                                         &lt;div class="item content-3">Content-3&lt;/div>
                                     &lt;/div>
                                     </code>
                                 </pre>
+                            </section>
+                            <br>
+                            <section id="modal-component">
+                                <div class="title-container">
+                                    <span class="component-name">Modal</span>
+                                    <p class="comp-description">Note: I have used form in Modal div, you can use anything like a card or just text inside modal. The functionality still remains same.</p>
+                                </div>
+                                <section class="container">
+                                    <a href="#modal-box">
+                                        <button class="btn btn-sm">Open Modal</button>
+                                    </a>
+                                    <div id="modal-box" class="flex modal absolute inset">
+                                        <form action="" class="forgot-password-form">
+                                        <div class="relative forgot-password-card">
+                                            <div class="flex card-header"><span class="heading txt-md lt-bold">Reset password</span></div>
+                                            <div class="card-content">
+                                                <p class="card-description txt-sm">Enter your email address and we will send you a link to reset your password.</p>
+                                                <div class="input-box">
+                                                    <div class="input-with-icon">
+                                                        <i class="icon email-icon size-xs far fa-envelope"></i>
+                                                        <input type="email" placeholder="Email" class="input email-input" required >
+                                                    </div>
+                                            </div>
+                                            <button href="#" type="submit" class="btn btn-md link reset-btn">Send reset link</button>
+                                        </div>
+                                        <a href="#" class="modal-close">&times;</a>
+                                        </form>
+                                </div>
+                                </section>
+                                <section class="code-container">
+                                    <pre class="code-demo">
+                                        <code class="html">&lt;div id="modal-box" class="flex modal absolute inset">
+                                            &lt;form action="" class="forgot-password-form">
+                                            &lt;div class="relative forgot-password-card">
+                                                &lt;div class="flex card-header">&lt;span class="heading txt-md lt-bold">Reset password&lt;/span>&lt;/div>
+                                                &lt;div class="card-content">
+                                                    &lt;p class="card-description txt-sm">Enter your email address and we will send you a link to reset your password.&lt;/p>
+                                                    &lt;div class="input-box">
+                                                        &lt;div class="input-with-icon">
+                                                            &lt;i class="icon email-icon size-xs far fa-envelope">&lt;/i>
+                                                            &lt;input type="email" placeholder="Email" class="input email-input" required >
+                                                        &lt;/div>
+                                                &lt;/div>
+                                                &lt;button href="#" type="submit" class="btn btn-md link reset-btn">Send reset link&lt;/button>
+                                            &lt;/div>
+                                            &lt;a href="#" class="modal-close">&times;&lt;/a>
+                                            &lt;/form>
+                                    &lt;/div></code>
+                                    </pre>
+                                </section>
+                            </section>
+                            <br>
+                            <section id="slider-component">
+                                <div class="title-container">
+                                    <span class="component-name">Slider</span>
+                                </div>
+                                <section class="container">
+                                    <div class="flex slider-container">
+                                        <input
+                                          type="range"
+                                          min="0"
+                                          max="5"
+                                          value="3"
+                                          class="slider-inp"
+                                        />
+                                        <span class="slider-value lt-bold txt-sm">3</span>
+                                      </div>
+                                </section>
+                                <section class="code-container">
+                                    <pre class="code-demo">
+                                        <code class="html">&lt;div class="flex slider-container">
+                                            &lt;input
+                                              type="range"
+                                              min="0"
+                                              max="5"
+                                              value="3"
+                                              class="slider-inp"
+                                            />
+                                            &lt;span class="slider-value lt-bold txt-sm">3&lt;/span>
+                                          &lt;/div></code>
+                                    </pre>
+                                </section>
+                            </section>
+                            <br>
+                            <section id="snackbar-component">
+                                <div class="title-container">
+                                    <span class="component-name">Snackbar</span>
+                                    <p class="comp-description">The Snackbar has 4 variants: Simple Snackbar, Success Snackbar, Danger Snackbar and Info Snackbar</p>
+                                </div>
+                                <section class="container">
+                                    <button class="btn show-snackbar btn-sm">SHOW SNACKBAR</button>
+        <div class="snackbar flex 
+        success-snackbar"><i class="fa-solid fa-circle-check"></i><span>Signed in succesfully</span></div>
+        <div class="snackbar flex 
+        danger-snackbar"><i class="fas fa-exclamation-circle"></i></i><span>Looks like something is wrong</span></div>
+        <div class="snackbar flex 
+        info-snackbar"><i class="fas fa-info-circle"></i></i><span>The product is added</span></div>
+                                </section>
+                                <section class="code-container">
+                                    <pre class="code-demo">
+                                        <code class="html">&lt;button class="btn show-snackbar btn-sm">SHOW SNACKBAR&lt;/button>
+                                            &lt;!-- The below code is for simple snackbar without any icon -->
+                                            &lt;div class=" flex snackbar">&lt;span>snackbar msg&lt;/span>&lt;/div>
+                                            &lt;!-- Success snackbar with icon -->
+                                            &lt;div class="snackbar flex 
+                                            success-snackbar">&lt;i class="fa-solid fa-circle-check">&lt;/i>&lt;span>Signed in succesfully&lt;/span>&lt;/div>
+                                            &lt;!-- Danger Snackbar with icon -->
+                                            &lt;div class="snackbar flex 
+                                            danger-snackbar">&lt;i class="fas fa-exclamation-circle">&lt;/i>&lt;/i>&lt;span>Looks like something is wrong&lt;/span>&lt;/div>
+                                            &lt;!-- Info snackbar wiht icon -->
+                                            &lt;div class="snackbar flex 
+                                            info-snackbar">&lt;i class="fas fa-info-circle">&lt;/i>&lt;/i>&lt;span>The product is added&lt;/span>&lt;/div></code>
+                                    </pre>
+                                </section>
+                            </section>
+                            <br>
+                            <section id="loader-component">
+                                <div class="title-container">
+                                    <span class="component-name">Loader/Pre-loader Spinner</span>
+                                </div>
+                                <section class="container">
+                                    <div class="flex spinner-box">
+                                        <div class="flex circle-border">
+                                            <div class="w-100 h-100 circle-core"></div>
+                                        </div>  
+                                    </div>
+                                </section>
+                                <section class="code-container">
+                                    <pre class="code-demo">
+                                        <code class="html">&lt;div class="flex spinner-box">
+                                            &lt;div class="flex circle-border">
+                                                &lt;div class="w-100 h-100 circle-core">&lt;/div>
+                                            &lt;/div>  
+                                        &lt;/div></code>
+                                    </pre>
+                                </section>
                             </section>
 <!-- Clsoing tag of doc-section-->
     </section>
