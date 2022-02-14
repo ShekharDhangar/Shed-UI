@@ -15,7 +15,7 @@
   }
   .forgot-password-card {
     margin-inline: 1rem;
-    max-width: 50rem;
+    max-width: 40rem;
     border-radius: 5px;
     background: var(--clr-white);
     box-shadow: var(--box-shadow-clr);

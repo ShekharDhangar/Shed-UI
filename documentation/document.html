@@ -870,7 +870,6 @@
                         <div class=" form-container grid">
                             <form action="login form register" id="login" class="login-form">
                                 <h2 class="form-title txt-center h2">Sign in</h2>
-                                <div class="input-box">
                                 <div class="input-with-icon">
                                     <i class="icon size-xs far fa-user "></i>
                                     <input type="text"
@@ -879,10 +878,9 @@
                                     <div class="flex validation-style">
                                         <img class="icon size-xs" src="/assets/warning.png" alt="">
                                         <span class="msg-txt error-txt lt-bold">
-                                            Please enter correct email</div>
+                                            Please enter correct email
                                         </span>
-                                    </div>
-                                    <div class="input-box">
+                                        </div>
                                         <div class="input-with-icon">
                                             <i class="icon fas fa-key"></i>
                                             <input type="password" placeholder="Password" 
@@ -892,7 +890,7 @@
                                         <div class="flex validation-style">
                                             <img class="icon size-xs" src="/assets/warning.png" alt="">
                                             <span class="error-txt lt-bold">
-                                                Please enter correct Password</div>
+                                                Please enter correct Password
                                             </span>
                                         </div>
                                 
@@ -919,7 +917,6 @@
                                 &lt;div class="flex form-container">
                                 &lt;form action="login form register" id="login" class="login-form">
                                     &lt;h2 class="form-title txt-center h2">Sign in&lt;/h2>
-                                    &lt;div class="input-box">
                                     &lt;div class="input-with-icon">
                                         &lt;i class="icon size-xs far fa-user ">&lt;/i>
                                         &lt;input type="text"
@@ -928,10 +925,9 @@
                                         &lt;div class="flex validation-style">
                                             &lt;img class="icon size-xs" src="/assets/warning.png" alt="">
                                             &lt;span class="msg-txt error-txt lt-bold">
-                                                Please enter correct email&lt;/div>
+                                                Please enter correct email
                                             &lt;/span>
-                                        &lt;/div>
-                                        &lt;div class="input-box">
+                                            &lt;/div>
                                             &lt;div class="input-with-icon">
                                                 &lt;i class="icon fas fa-key">&lt;/i>
                                                 &lt;input type="password" placeholder="Password" 
@@ -941,7 +937,7 @@
                                             &lt;div class="flex validation-style">
                                                 &lt;img class="icon size-xs" src="/assets/warning.png" alt="">
                                                 &lt;span class="error-txt lt-bold">
-                                                    Please enter correct Password&lt;/div>
+                                                    Please enter correct Password
                                                 &lt;/span>
                                             &lt;/div>
                                     
@@ -1516,42 +1512,34 @@
                                         <button class="btn btn-sm">Open Modal</button>
                                     </a>
                                     <div id="modal-box" class="flex modal absolute inset">
-                                        <form action="" class="forgot-password-form">
                                         <div class="relative forgot-password-card">
-                                            <div class="flex card-header"><span class="heading txt-md lt-bold">Reset password</span></div>
-                                            <div class="card-content">
-                                                <p class="card-description txt-sm">Enter your email address and we will send you a link to reset your password.</p>
-                                                <div class="input-box">
-                                                    <div class="input-with-icon">
-                                                        <i class="icon email-icon size-xs far fa-envelope"></i>
-                                                        <input type="email" placeholder="Email" class="input email-input" required >
-                                                    </div>
-                                            </div>
-                                            <button href="#" type="submit" class="btn btn-md link reset-btn">Send reset link</button>
+                                    <form action="" class="forgot-password-form">
+                                    <span class="flex heading txt-md lt-bold">Reset password</span>
+                                            <p class="card-description txt-sm">Enter your email address and we will send you a link to reset your password.</p>
+                                                <div class="w-100 input-with-icon">
+                                                    <i class="icon email-icon size-xs far fa-envelope"></i>
+                                                    <input type="email" placeholder="Email" class="input email-input" required >
                                         </div>
-                                        <a href="#" class="modal-close">&times;</a>
-                                        </form>
-                                </div>
+                                        <button href="#" type="submit" class="btn btn-sm link reset-btn">Send reset link</button>
+                                    <a href="#" class="modal-close">&times;</a>
+                                </form>
+                            </div>
                                 </section>
                                 <section class="code-container">
                                     <pre class="code-demo">
                                         <code class="html">&lt;div id="modal-box" class="flex modal absolute inset">
-                                            &lt;form action="" class="forgot-password-form">
                                             &lt;div class="relative forgot-password-card">
-                                                &lt;div class="flex card-header">&lt;span class="heading txt-md lt-bold">Reset password&lt;/span>&lt;/div>
-                                                &lt;div class="card-content">
-                                                    &lt;p class="card-description txt-sm">Enter your email address and we will send you a link to reset your password.&lt;/p>
-                                                    &lt;div class="input-box">
-                                                        &lt;div class="input-with-icon">
-                                                            &lt;i class="icon email-icon size-xs far fa-envelope">&lt;/i>
-                                                            &lt;input type="email" placeholder="Email" class="input email-input" required >
-                                                        &lt;/div>
-                                                &lt;/div>
-                                                &lt;button href="#" type="submit" class="btn btn-md link reset-btn">Send reset link&lt;/button>
+                                        &lt;form action="" class="forgot-password-form">
+                                        &lt;span class="flex heading txt-md lt-bold">Reset password&lt;/span>
+                                                &lt;p class="card-description txt-sm">Enter your email address and we will send you a link to reset your password.&lt;/p>
+                                                    &lt;div class="w-100 input-with-icon">
+                                                        &lt;i class="icon email-icon size-xs far fa-envelope">&lt;/i>
+                                                        &lt;input type="email" placeholder="Email" class="input email-input" required >
                                             &lt;/div>
-                                            &lt;a href="#" class="modal-close">&times;&lt;/a>
-                                            &lt;/form>
-                                    &lt;/div></code>
+                                            &lt;button href="#" type="submit" class="btn btn-sm link reset-btn">Send reset link&lt;/button>
+                                        &lt;a href="#" class="modal-close">&times;&lt;/a>
+                                    &lt;/form>
+                                &lt;/div></code>
                                     </pre>
                                 </section>
                             </section>

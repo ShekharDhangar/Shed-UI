@@ -25,21 +25,19 @@
 .signup-form .form-title{
     margin-bottom: 0;
 }
-.input-box{
-    display: grid;    
-}
-.input-box .input{
+
+.input{
     width: 100%;
 }
-.input-box > .validation-style{
+form .validation-style{
     height: min-content;
     gap: .75rem;
     font-size: 1.3rem;
     padding: .5rem;
     letter-spacing: 0.5px;
-    justify-self: flex-start;
+    justify-content: flex-start;
 }
-.input-box > .validation-style > .icon{
+ .validation-style > .icon{
     width: 2.5rem;
     height: 2.5rem;
 }
@@ -66,17 +64,11 @@
     font-size: 2rem;
 }
 .input-with-icon > .input{
-    outline: none;
-    border: none;
-    font-family: 'Poppins', serif;
     font-size: 1.75rem;
     font-weight: 600;
     background-color: transparent;
 }
 
-.active-inp{
-    border: 2.5px solid var(--primary-clr);
-}
 .remember-forgot-grp{
     margin-top: 1.25rem;
     justify-content: space-around;
