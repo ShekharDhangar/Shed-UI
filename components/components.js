@@ -1,11 +1,3 @@
-const floatBtn = document.querySelector('.float-btn')
-const floatItems= document.querySelector('.floating-items');
-floatBtn.addEventListener('click',()=>{
-    floatItems.classList.toggle('hidden'); 
-    floatBtn.removeEventListener();
-})
-
-
 const sliderInp = document.querySelector('.slider-inp');
 const sliderValue = document.querySelector('.slider-value');
 sliderInp.addEventListener('input',()=>{
@@ -20,4 +12,10 @@ snackbarBtn.addEventListener('click',()=>{
     setTimeout(()=>{
         snackbar.classList.remove('show')
     },5000)
+})
+const floatBtn = document.querySelector('.float-btn')
+const floatItems= document.querySelector('.floating-items');
+floatBtn.addEventListener('click',()=>{
+    floatItems.classList.toggle('hidden'); 
+    floatBtn.removeEventListener();
 })
