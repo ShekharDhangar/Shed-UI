@@ -4,7 +4,7 @@
     box-sizing: border-box;
     width: 100%;
     max-width: max-content;
-    border-radius: 0.75rem;
+    border-radius: 7.5px;
     overflow: hidden;
     border:none;
     border-width: 0px;
@@ -39,7 +39,7 @@
 .alert-content{
     color: var(--clr-white);
     flex-basis: 25rem;
-    padding: 0.75rem 0;
+    padding: 7.5px 0;
     padding-inline-end: 2rem;
     flex-grow: 1;
     align-self: center;
