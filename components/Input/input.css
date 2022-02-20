@@ -103,15 +103,7 @@ outline: none;
     font-weight: 600;
     color: var(--primary-clr);
 }
-.login-btn,.signup-btn,.reset-password-btn{
-    width: 100%;
-    max-width: 100%;
-    font-size: 2rem;
-    height: 6rem;
-    padding-inline: 4rem;
-    transition: .3s ;
-    margin: 2rem 0;
-}
+
 .login-way{
     margin-bottom: 1.25rem;
 }

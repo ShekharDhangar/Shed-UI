@@ -151,3 +151,11 @@
     align-items: center;
 }
 
+.login-btn,.signup-btn, .reset-password-btn{
+    width: 100%;
+    max-width: 100%;
+    font-size: 2rem;
+    height: 6rem;
+    padding-inline: 4rem;
+    margin: 2rem 0;
+}
