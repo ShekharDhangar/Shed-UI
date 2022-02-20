@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     max-width: 50rem;
-    border-radius: 0.5rem;
+    border-radius: 5px;
 }
 .card-container .card-header{
     justify-content: space-between;
@@ -17,11 +17,11 @@ span{
     font-size: 1.25rem;
 }
 .card-container .card-content > .card-description{
-    margin-top: 0.5rem;
+    margin-top: 5px;
     font-size: 1.25rem;
 }
 .card-container .card-content{
-    margin-top: 0.5rem;
+    margin-top: 5px;
 }
 .card-container .title{
     font-weight: 800;
@@ -38,13 +38,13 @@ span{
     margin-inline:1rem;
 }
 .card-author-box span{
-    margin: 0 0.75rem;
+    margin: 0 7.5px;
 }
 
   /* DISMISS-CARD */
 .dismiss-card{
     align-items: flex-start;
-    border-radius: 0.5rem;
+    border-radius: 5px;
     width: 100%;
     max-width: 35rem;
     color: var(--clr-white);
@@ -54,14 +54,14 @@ span{
 }
 .dismiss-card .card-footer .icon{
     background-color: var(--primary-clr);
-    padding: 0.75rem;
+    padding: 7.5px;
     color: var(--clr-white);
     width: 2rem;
     height: 2rem;
     align-items: center;
 }
 .dismiss-card .close-icon{
-    top: 0.75rem;
+    top: 7.5px;
     right: 1rem;
     border: none;
     padding: 1.25rem;
@@ -84,7 +84,7 @@ span{
     display: grid;
     max-width: 35rem;
     border: none;
-    border-radius: 0.75rem;
+    border-radius: 7.5px;
 }
 .card-overlay .img-overlay > img{
     width: 100%;
@@ -142,11 +142,11 @@ span{
     padding-inline-end: 1rem;
 }
 .horizontal-card .card-content .title{
-    margin-top: 0.25rem;
+    margin-top: 2.5px;
     font-size: 2rem;
 }
 .horizontal-card .card-content .rating{
-    margin-top: 0.5rem;
+    margin-top: 5px;
     color: var(--clr-yellow);
     font-size: 1.5rem;
 }
@@ -162,11 +162,11 @@ span{
     font-size: 1.5rem;
 }
 .horizontal-card .card-footer .btn{
-    margin: 0.5rem 0;
+    margin: 5px 0;
     width: 100%;
 }
 .horizontal-card .card-footer .footer-1{
-    margin: 0.25rem 0;
+    margin: 2.5px 0;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -213,11 +213,11 @@ span{
 }
 .product-card{
     background-color: var(--clr-white);
-    border-radius: 0.5rem;
+    border-radius: 5px;
     box-shadow: var(--box-shadow-clr); 
     flex-direction: column;
     height: max-content;
-    margin:0.5rem 0;
+    margin: 5px 0;
     padding-bottom:1.5rem;
     max-inline-size: 100%;
     overflow: hidden;

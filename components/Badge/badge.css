@@ -4,7 +4,7 @@
 .avatar-badge{
     position: absolute;
     border-radius: 50%;
-    border: 0.5rem solid white;
+    border: 5px solid var(--clr-white);
     bottom: 0;
     right: 0;
 }
@@ -12,20 +12,20 @@
     border-radius: 1rem;
 }
 .badge-sm{
-    border: 0.2rem solid white;
-    right: 0.2rem;
+    border: 2px solid var(--clr-white);
+    right: 2px;
     width: 1rem;
     height: 1rem;
     background-color: var(--clr-high-green);
 }
 .badge-md{
-    border: 0.3rem solid white;
+    border: 3px solid var(--clr-white);
     width: 1.5rem;
     height: 1.5rem;
     background-color: var(--clr-maroon);
 }
 .badge-lg{
-    border: 0.4rem solid white;
+    border: 4px solid var(--clr-white);
     width: 2.2rem;
     height: 2.2rem;
     background-color: var(--clr-purple);
@@ -55,10 +55,11 @@
 }
 .badge-icon .badge{
     border-radius: 50%;
-    background-color: var(--clr-high-green);
+    background-color: var(--primary-clr);
     position: absolute;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     top: 0rem;
+    color: var(--clr-white);
     right:0rem;
     display: inline-flex;
     width: 2rem;

@@ -12,13 +12,13 @@
     height: 2.25rem;
     font-weight: 700;
     background-color: var(--primary-clr);
-    border-radius: 0.5rem;
+    border-radius: 5px;
     border: none;
     color: var(--clr-white);
-    padding-inline-start: 0.7rem;
-    padding-inline-end: 0.7rem;
+    padding-inline-start: 7px;
+    padding-inline-end: 7px;
     width: max-content;
-    gap: 0.75rem;
+    gap: 7.5px;
 }
 
 .btn:hover{
@@ -43,7 +43,7 @@
 .btn.outline{
     background-color: transparent;
     border:1px solid var(--primary-clr);
-    border-radius: 0.5rem;
+    border-radius: 5px;
     color: var(--primary-clr);
 }
 
@@ -108,7 +108,7 @@
     min-height: max-content;
     color: var(--clr-white);
     font-weight: 700;
-    border-radius: 0.5rem;
+    border-radius: 5px;
 }
 
 .link-container{
@@ -151,3 +151,11 @@
     align-items: center;
 }
 
+.login-btn,.signup-btn, .reset-password-btn{
+    width: 100%;
+    max-width: 100%;
+    font-size: 2rem;
+    height: 6rem;
+    padding-inline: 4rem;
+    margin: 2rem 0;
+}

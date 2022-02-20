@@ -31,7 +31,7 @@ ul.stacked-list{
 .stacked-list > li{
     border: 2px solid var(--clr-black);
     margin: 1rem 0;
-    padding: 0.5rem;
+    padding: 5px;
 }
 .list-none{
     list-style-type: none;
