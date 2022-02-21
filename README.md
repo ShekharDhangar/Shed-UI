@@ -5,7 +5,7 @@
  A Light Speed Component Library for blazing WebApps 
 
 ### Preview
-
+![SHED-UI-GIF](/demo/SHED-UI-GIF.gif)
 ### Tech Stack
 Vanilla CSS, highlight.js
 
