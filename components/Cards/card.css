@@ -2,7 +2,7 @@
 @import url(/components/Avatar/avatar.css);
 @import url(/components/Button/button.css);
 .card-container{
-    background-color: var(--clr-darkblue);
+    background-color: var(--clr-darkBlue);
     padding: 1.5rem 2rem;
     color: var(--clr-white);
     display: flex;
@@ -191,6 +191,7 @@ span{
     border-radius: 5px;
     box-shadow: var(--box-shadow-clr);
     margin: 1rem;
+    background-color: var(--clr-white);
     max-width: 30rem;
 }
 .vertical-card .img-container {
