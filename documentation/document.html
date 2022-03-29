@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentation</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>hljs.highlightAll();</script>
+    <script>hljs.highlightAll()</script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css" integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="https://kit.fontawesome.com/e5dbe6b99b.js" crossorigin="anonymous"></script>
@@ -369,9 +369,15 @@
                 <section class="container">
                     <button class="btn btn-xs">Send</button>
                     <button class="btn btn-sm">Send</button>
-                    <button class="btn btn-md">Send</button>
-                    <button class="btn btn-lg">Email</button>
-                    <button class="btn btn-xl">Sign up</button>
+                    <button class="btn btn-lg">Sign up</button>
+                     <button class="btn btn-sm" >
+                         <a class=" link" href="#">Link
+                    <i class="icon fas fa-arrow-right"></i>        
+                        </a>
+                    </button>
+                    <button class="btn btn-sm">
+                        <i class="fas fa-shopping-bag"></i>
+                    </button>
                     <button class="btn btn-sm">
                         Send
                         <i class="icon far fa-paper-plane"></i>
@@ -381,8 +387,17 @@
                     <pre class="code-demo">
                         <code class="html">&lt;button class="btn btn-sm">Send&lt;/button>
                     &lt;!-- To use different button size replace class name "btn-sm" with respective size  -->
-                    &lt;button class="btn btn-xl">Sign up&lt;/button>
+                    &lt;button class="btn btn-md">Sign up&lt;/button>
+                    &lt;!-- Button with link -->
+                    &lt;button class="btn btn-sm" >
+                    &lt;a class=" link" href="#">Link
+                    &lt;i class="icon fas fa-arrow-right">&lt;/i>        
+                    &lt;/a>
+                    &lt;/button>
                     &lt;!-- Button with icon -->
+                    &lt;button class="btn btn-sm">
+                        &lt;i class="fas fa-shopping-bag">&lt;/i>
+                    &lt;/button>
                     &lt;button class="btn btn-sm">Send&lt;i class="icon far fa-paper-plane">&lt;/i>&lt;/button>
                         </code>
                     </pre>
@@ -554,7 +569,66 @@
                 </section>
             </section>
             <br>
-
+            <section>
+                <div class="title-container">
+                    <span class="sub-component-name">Badge Card</span>
+                </div>
+                <section class="container">
+                    <div class="badge-card">
+                        <div class="my-badge">You Save 80%</div>
+                        <div class="card-header card-img">
+                            <img src="https://rb.gy/csnlne" alt="product image of boat headphone">
+                    </div>
+                    <div class="card-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="card-description">
+                            <div class="title">boAt Rockerz 550</div>
+                            <span class="price" >Rs. 1,999.00</span>
+                        </div>
+                        <div class="card-clr-variant">
+                            <li class="bg-primary" ></li>
+                            <li class="bg-black"></li>
+                            <li class="bg-teal" ></li>
+                        </div>
+                        <button class="btn btn-sm">View Product</button>
+                    </div>
+            </div>
+                </section>
+                <section class="code-container">
+                    <pre class="code-demo">
+                        <code class="html"> &lt;div class="badge-card">
+                            &lt;div class="my-badge">You Save 80%&lt;/div>
+                            &lt;div class="card-header card-img">
+                                &lt;img src="https://rb.gy/csnlne" alt="product image of boat headphone">
+                        &lt;/div>
+                        &lt;div class="card-content">
+                            &lt;div class="rating">
+                                &lt;i class="fas fa-star">&lt;/i>
+                                &lt;i class="fas fa-star">&lt;/i>
+                                &lt;i class="fas fa-star">&lt;/i>
+                                &lt;i class="fas fa-star">&lt;/i>
+                            &lt;/div>
+                            &lt;div class="card-description">
+                                &lt;div class="title">boAt Rockerz 550&lt;/div>
+                                &lt;span class="price" >Rs. 1,999.00&lt;/span>
+                            &lt;/div>
+                            &lt;div class="card-clr-variant">
+                                &lt;li class="bg-primary" >&lt;/li>
+                                &lt;li class="bg-black">&lt;/li>
+                                &lt;li class="bg-teal" >&lt;/li>
+                            &lt;/div>
+                            &lt;button class="btn btn-sm">View Product&lt;/button>
+                        &lt;/div>
+                &lt;/div></code>
+                    </pre>
+                </section>
+            </section>
+            <br>
 
             <section>
                 <div class="title-container">
@@ -922,6 +996,7 @@
                                         &lt;input type="text"
                                         id = "check-email-inp" placeholder="Email" class="input email-input" required>
                                     &lt;/div>
+                                    &lt;!-- INPUT-VALIDATION -->
                                         &lt;div class="flex validation-style">
                                             &lt;img class="icon size-xs" src="/assets/warning.png" alt="">
                                             &lt;span class="msg-txt error-txt lt-bold">
@@ -1129,7 +1204,9 @@
                 </section>
                 <section class="code-container">
                     <pre class="code-demo">
-                        <code class="html">&lt;div class="txt-grey txt-md">
+                        <code class="html">
+                            &lt;!-- This is Grey Text -->
+                            &lt;div class="txt-grey txt-md">
                             This is a grey text
                         &lt;/div>
                         &lt;div class="txt-center txt-md">
