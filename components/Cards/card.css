@@ -10,13 +10,7 @@
     max-width: 50rem;
     border-radius: 5px;
 }
-.badge-card .badge{
-    background-color: var(--secondary-clr);
-    padding: 5px;
-    right: 0;
-    position: absolute;
-    font-size: 1.5rem;
-}
+
 .card-container .card-header{
     justify-content: space-between;
 }
